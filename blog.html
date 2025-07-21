@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>活動報告 - CoderDojo HARUMI</title>
+    <link rel="stylesheet" href="styles/main.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <nav class="nav">
+            <div class="nav-brand">
+                <h1>CoderDojo HARUMI</h1>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html">ホーム</a></li>
+                <li><a href="activities.html">活動内容</a></li>
+                <li><a href="join.html">参加方法</a></li>
+                <li><a href="blog.html">活動報告</a></li>
+                <li><a href="contact.html">お問い合わせ</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="main">
+        <section class="page-hero">
+            <div class="container">
+                <h2>活動報告</h2>
+                <p>CoderDojo HARUMIの活動の様子や子供たちの作品をご紹介します</p>
+            </div>
+        </section>
+
+        <section class="blog-main">
+            <div class="container">
+                <div id="blog-posts" class="blog-grid">
+                    <!-- Ghost CMSから記事が動的に読み込まれます -->
+                </div>
+
+                <div class="pagination">
+                    <a href="#" class="page-btn">← 前のページ</a>
+                    <div class="page-numbers">
+                        <a href="#" class="page-num active">1</a>
+                        <a href="#" class="page-num">2</a>
+                        <a href="#" class="page-num">3</a>
+                        <span class="page-dots">...</span>
+                        <a href="#" class="page-num">5</a>
+                    </div>
+                    <a href="#" class="page-btn">次のページ →</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="blog-subscribe">
+            <div class="container">
+                <div class="subscribe-content">
+                    <h3>最新情報をお届け</h3>
+                    <p>CoderDojo HARUMIの活動情報や新着ブログ記事をメールでお知らせします</p>
+                    <div class="subscribe-form">
+                        <input type="email" placeholder="メールアドレスを入力">
+                        <button type="button" class="subscribe-btn">購読する</button>
+                    </div>
+                    <div class="social-links">
+                        <p>SNSでもフォローしてください</p>
+                        <div class="social-icons">
+                            <a href="#" class="social-link">📧 メール</a>
+                            <a href="#" class="social-link">📱 LINE</a>
+                            <a href="#" class="social-link">🐦 Twitter</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-info">
+                    <h4>CoderDojo HARUMI</h4>
+                    <p>子供たちの可能性を広げるプログラミングクラブ</p>
+                </div>
+                <div class="footer-links">
+                    <ul>
+                        <li><a href="index.html">ホーム</a></li>
+                        <li><a href="activities.html">活動内容</a></li>
+                        <li><a href="join.html">参加方法</a></li>
+                        <li><a href="blog.html">活動報告</a></li>
+                        <li><a href="contact.html">お問い合わせ</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 CoderDojo HARUMI. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <style>
+        .page-hero {
+            background: linear-gradient(135deg, #fa709a 0%, #fee140 100%);
+            color: white;
+            padding: 4rem 0;
+            text-align: center;
+        }
+
+        .blog-main {
+            padding: 4rem 0;
+            background: #f8f9fa;
+        }
+
+        .blog-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 2.5rem;
+            margin-bottom: 3rem;
+        }
+
+        .blog-post {
+            background: white;
+            border-radius: 20px;
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .blog-post:hover {
+            transform: translateY(-5px);
+        }
+
+        .post-image {
+            height: 200px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .placeholder-image {
+            font-size: 4rem;
+            color: white;
+        }
+
+        .post-content {
+            padding: 2rem;
+        }
+
+        .post-meta {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 1rem;
+        }
+
+        .post-date {
+            color: #666;
+            font-size: 0.9rem;
+        }
+
+        .post-category {
+            background: linear-gradient(45deg, #fa709a, #fee140);
+            color: white;
+            padding: 0.3rem 0.8rem;
+            border-radius: 15px;
+            font-size: 0.8rem;
+            font-weight: 600;
+        }
+
+        .post-content h3 {
+            font-size: 1.3rem;
+            margin-bottom: 1rem;
+            color: #333;
+            font-weight: 700;
+            line-height: 1.4;
+        }
+
+        .post-content p {
+            color: #666;
+            line-height: 1.6;
+            margin-bottom: 1.5rem;
+        }
+
+        .read-more {
+            color: #4f46e5;
+            text-decoration: none;
+            font-weight: 600;
+            transition: color 0.3s ease;
+        }
+
+        .read-more:hover {
+            color: #7c3aed;
+        }
+
+        .pagination {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 3rem;
+            padding: 2rem 0;
+        }
+
+        .page-numbers {
+            display: flex;
+            gap: 0.5rem;
+            align-items: center;
+        }
+
+        .page-num, .page-btn {
+            padding: 0.8rem 1.2rem;
+            border-radius: 10px;
+            text-decoration: none;
+            color: #666;
+            transition: all 0.3s ease;
+            background: white;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        .page-num:hover, .page-btn:hover {
+            background: #4f46e5;
+            color: white;
+            transform: translateY(-2px);
+        }
+
+        .page-num.active {
+            background: #4f46e5;
+            color: white;
+        }
+
+        .page-dots {
+            color: #666;
+            padding: 0 0.5rem;
+        }
+
+        .blog-subscribe {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 4rem 0;
+        }
+
+        .subscribe-content {
+            text-align: center;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .subscribe-content h3 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            font-weight: 700;
+        }
+
+        .subscribe-content p {
+            font-size: 1.2rem;
+            margin-bottom: 2.5rem;
+            opacity: 0.9;
+        }
+
+        .subscribe-form {
+            display: flex;
+            gap: 1rem;
+            margin-bottom: 3rem;
+            max-width: 400px;
+            margin-left: auto;
+            margin-right: auto;
+            margin-bottom: 3rem;
+        }
+
+        .subscribe-form input {
+            flex: 1;
+            padding: 1rem;
+            border: none;
+            border-radius: 50px;
+            font-size: 1rem;
+        }
+
+        .subscribe-btn {
+            padding: 1rem 2rem;
+            background: #ff6b6b;
+            color: white;
+            border: none;
+            border-radius: 50px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: background 0.3s ease;
+        }
+
+        .subscribe-btn:hover {
+            background: #ff5252;
+        }
+
+        .social-links p {
+            margin-bottom: 1rem;
+            font-size: 1.1rem;
+        }
+
+        .social-icons {
+            display: flex;
+            justify-content: center;
+            gap: 1.5rem;
+        }
+
+        .social-link {
+            color: white;
+            text-decoration: none;
+            padding: 0.8rem 1.5rem;
+            background: rgba(255, 255, 255, 0.2);
+            border-radius: 25px;
+            transition: all 0.3s ease;
+            backdrop-filter: blur(10px);
+        }
+
+        .social-link:hover {
+            background: rgba(255, 255, 255, 0.3);
+            transform: translateY(-2px);
+        }
+
+        @media (max-width: 768px) {
+            .blog-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .pagination {
+                flex-direction: column;
+                gap: 1.5rem;
+            }
+            
+            .page-numbers {
+                order: 2;
+            }
+            
+            .subscribe-form {
+                flex-direction: column;
+                gap: 1rem;
+            }
+            
+            .social-icons {
+                flex-direction: column;
+                align-items: center;
+                gap: 1rem;
+            }
+        }
+    </style>
+
+    <script src="js/ghost-integration.js"></script>
+</body>
+</html>

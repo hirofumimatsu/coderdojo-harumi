@@ -1,0 +1,694 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>お問い合わせ - CoderDojo HARUMI</title>
+    <link rel="stylesheet" href="styles/main.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <nav class="nav">
+            <div class="nav-brand">
+                <h1>CoderDojo HARUMI</h1>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html">ホーム</a></li>
+                <li><a href="activities.html">活動内容</a></li>
+                <li><a href="join.html">参加方法</a></li>
+                <li><a href="blog.html">活動報告</a></li>
+                <li><a href="contact.html">お問い合わせ</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="main">
+        <section class="page-hero">
+            <div class="container">
+                <h2>お問い合わせ</h2>
+                <p>ご質問やご相談がございましたら、お気軽にお問い合わせください</p>
+            </div>
+        </section>
+
+        <section class="contact-main">
+            <div class="container">
+                <div class="contact-grid">
+                    <div class="contact-info">
+                        <h3>連絡方法</h3>
+                        <div class="contact-methods">
+                            <div class="contact-method">
+                                <div class="method-icon">📧</div>
+                                <h4>メール</h4>
+                                <p>coderdojo.harumi@example.com</p>
+                                <small>24時間受付（返信は3営業日以内）</small>
+                            </div>
+                            <div class="contact-method">
+                                <div class="method-icon">📱</div>
+                                <h4>LINE公式アカウント</h4>
+                                <p>@coderdojo-harumi</p>
+                                <small>平日 9:00-18:00</small>
+                            </div>
+                            <div class="contact-method">
+                                <div class="method-icon">🐦</div>
+                                <h4>Twitter</h4>
+                                <p>@CoderDojoHARUMI</p>
+                                <small>活動情報も随時更新</small>
+                            </div>
+                        </div>
+
+                        <div class="faq-quick">
+                            <h4>よくある質問</h4>
+                            <div class="faq-item">
+                                <strong>Q: 参加費用はかかりますか？</strong>
+                                <p>A: 完全無料です。教材費や会場費も一切かかりません。</p>
+                            </div>
+                            <div class="faq-item">
+                                <strong>Q: プログラミング未経験でも大丈夫ですか？</strong>
+                                <p>A: もちろんです。基礎から丁寧にサポートします。</p>
+                            </div>
+                            <div class="faq-item">
+                                <strong>Q: 保護者の見学は可能ですか？</strong>
+                                <p>A: はい、いつでも見学していただけます。</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="contact-form-section">
+                        <h3>お問い合わせフォーム</h3>
+                        <form class="contact-form" id="contactForm" netlify>
+                            <div class="form-group">
+                                <label for="name">お名前 *</label>
+                                <input type="text" id="name" name="name" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="email">メールアドレス *</label>
+                                <input type="email" id="email" name="email" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="subject">件名 *</label>
+                                <select id="subject" name="subject" required>
+                                    <option value="">選択してください</option>
+                                    <option value="participation">参加申し込みについて</option>
+                                    <option value="visit">見学について</option>
+                                    <option value="activities">活動内容について</option>
+                                    <option value="volunteer">メンター・ボランティアについて</option>
+                                    <option value="other">その他</option>
+                                </select>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="child-age">お子様の年齢（該当する場合）</label>
+                                <input type="number" id="child-age" name="child-age" min="5" max="18" placeholder="例: 10">
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="programming-experience">プログラミング経験</label>
+                                <div class="radio-group">
+                                    <label class="radio-label">
+                                        <input type="radio" name="experience" value="none">
+                                        なし
+                                    </label>
+                                    <label class="radio-label">
+                                        <input type="radio" name="experience" value="beginner">
+                                        少しある（Scratch等）
+                                    </label>
+                                    <label class="radio-label">
+                                        <input type="radio" name="experience" value="intermediate">
+                                        ある程度ある（テキスト言語も）
+                                    </label>
+                                </div>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="message">お問い合わせ内容 *</label>
+                                <textarea id="message" name="message" rows="6" required placeholder="ご質問やご相談内容を詳しくお書きください"></textarea>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label class="checkbox-label">
+                                    <input type="checkbox" name="privacy" required>
+                                    <a href="#privacy">プライバシーポリシー</a>に同意します
+                                </label>
+                            </div>
+                            
+                            <button type="submit" class="submit-btn">送信する</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="location-info">
+            <div class="container">
+                <h3>会場情報</h3>
+                <div class="location-grid">
+                    <div class="location-details">
+                        <div class="location-card">
+                            <h4>📍 住所</h4>
+                            <p>東京都中央区晴海3-4-1<br>
+                            晴海コミュニティセンター<br>
+                            多目的室A</p>
+                        </div>
+                        <div class="location-card">
+                            <h4>🚇 アクセス</h4>
+                            <p><strong>都営大江戸線</strong><br>
+                            勝どき駅 A3出口より徒歩8分</p>
+                            <p><strong>ゆりかもめ</strong><br>
+                            新豊洲駅より徒歩10分</p>
+                        </div>
+                        <div class="location-card">
+                            <h4>🅿️ 駐車場</h4>
+                            <p>近隣にコインパーキングがございます。<br>
+                            環境への配慮から公共交通機関のご利用をお勧めしています。</p>
+                        </div>
+                        <div class="location-card">
+                            <h4>⏰ 開催時間</h4>
+                            <p><strong>毎月第2・第4土曜日</strong></p>
+                            <p>午前の部: 10:00-12:00<br>
+                            午後の部: 14:00-17:00</p>
+                        </div>
+                    </div>
+                    <div class="map-section">
+                        <div class="map-placeholder">
+                            <div class="map-content">
+                                <h4>🗺️ 会場マップ</h4>
+                                <p>Google Maps で詳しい場所を確認</p>
+                                <a href="#" class="map-link">地図を開く</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="volunteer-info" id="volunteer">
+            <div class="container">
+                <h3>メンター・ボランティア募集</h3>
+                <div class="volunteer-content">
+                    <div class="volunteer-text">
+                        <p>CoderDojo HARUMIでは、子供たちの学習をサポートしてくださるメンターやボランティアの方を募集しています。</p>
+                        <div class="volunteer-requirements">
+                            <h4>募集要項</h4>
+                            <ul>
+                                <li>プログラミング経験のある方（レベル不問）</li>
+                                <li>子供たちと接することが好きな方</li>
+                                <li>月1回程度参加可能な方</li>
+                                <li>ボランティア活動に興味のある方</li>
+                            </ul>
+                        </div>
+                        <div class="volunteer-benefits">
+                            <h4>得られること</h4>
+                            <ul>
+                                <li>教えることで自分のスキルアップ</li>
+                                <li>子供たちの成長を見守る喜び</li>
+                                <li>地域コミュニティへの貢献</li>
+                                <li>同じ志を持つ仲間との出会い</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="volunteer-apply">
+                        <div class="apply-card">
+                            <h4>🌟 メンター・ボランティア応募</h4>
+                            <p>まずはお気軽にご連絡ください。見学からでも大歓迎です！</p>
+                            <div class="apply-buttons">
+                                <a href="mailto:coderdojo.harumi@example.com?subject=メンター応募について" class="apply-btn">メールで応募</a>
+                                <a href="#" class="apply-btn secondary">LINEで相談</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-info">
+                    <h4>CoderDojo HARUMI</h4>
+                    <p>子供たちの可能性を広げるプログラミングクラブ</p>
+                </div>
+                <div class="footer-links">
+                    <ul>
+                        <li><a href="index.html">ホーム</a></li>
+                        <li><a href="activities.html">活動内容</a></li>
+                        <li><a href="join.html">参加方法</a></li>
+                        <li><a href="blog.html">活動報告</a></li>
+                        <li><a href="contact.html">お問い合わせ</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 CoderDojo HARUMI. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <style>
+        .page-hero {
+            background: linear-gradient(135deg, #84fab0 0%, #8fd3f4 100%);
+            color: white;
+            padding: 4rem 0;
+            text-align: center;
+        }
+
+        .contact-main {
+            padding: 4rem 0;
+            background: #f8f9fa;
+        }
+
+        .contact-grid {
+            display: grid;
+            grid-template-columns: 1fr 2fr;
+            gap: 4rem;
+        }
+
+        .contact-info h3 {
+            font-size: 2rem;
+            margin-bottom: 2rem;
+            color: #333;
+            font-weight: 700;
+        }
+
+        .contact-methods {
+            display: grid;
+            gap: 1.5rem;
+            margin-bottom: 3rem;
+        }
+
+        .contact-method {
+            background: white;
+            padding: 2rem;
+            border-radius: 15px;
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+            display: flex;
+            align-items: center;
+            gap: 1.5rem;
+        }
+
+        .method-icon {
+            font-size: 2rem;
+            min-width: 60px;
+            text-align: center;
+        }
+
+        .contact-method h4 {
+            font-size: 1.2rem;
+            margin-bottom: 0.5rem;
+            color: #333;
+        }
+
+        .contact-method p {
+            color: #4f46e5;
+            font-weight: 600;
+            margin-bottom: 0.3rem;
+        }
+
+        .contact-method small {
+            color: #666;
+            font-size: 0.9rem;
+        }
+
+        .faq-quick {
+            background: white;
+            padding: 2rem;
+            border-radius: 15px;
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+        }
+
+        .faq-quick h4 {
+            color: #333;
+            margin-bottom: 1.5rem;
+            font-size: 1.3rem;
+        }
+
+        .faq-item {
+            margin-bottom: 1.5rem;
+            padding-bottom: 1rem;
+            border-bottom: 1px solid #eee;
+        }
+
+        .faq-item:last-child {
+            border-bottom: none;
+            margin-bottom: 0;
+        }
+
+        .faq-item strong {
+            display: block;
+            color: #4f46e5;
+            margin-bottom: 0.5rem;
+            font-size: 0.95rem;
+        }
+
+        .faq-item p {
+            color: #666;
+            margin: 0;
+            line-height: 1.5;
+        }
+
+        .contact-form-section {
+            background: white;
+            padding: 3rem;
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+        }
+
+        .contact-form-section h3 {
+            font-size: 2rem;
+            margin-bottom: 2rem;
+            color: #333;
+            font-weight: 700;
+        }
+
+        .form-group {
+            margin-bottom: 2rem;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 0.5rem;
+            color: #333;
+            font-weight: 600;
+        }
+
+        .form-group input,
+        .form-group select,
+        .form-group textarea {
+            width: 100%;
+            padding: 1rem;
+            border: 2px solid #e2e8f0;
+            border-radius: 10px;
+            font-size: 1rem;
+            transition: border-color 0.3s ease;
+        }
+
+        .form-group input:focus,
+        .form-group select:focus,
+        .form-group textarea:focus {
+            outline: none;
+            border-color: #4f46e5;
+        }
+
+        .radio-group {
+            display: flex;
+            flex-direction: column;
+            gap: 0.8rem;
+        }
+
+        .radio-label {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            font-weight: normal;
+            cursor: pointer;
+        }
+
+        .radio-label input[type="radio"] {
+            width: auto;
+        }
+
+        .checkbox-label {
+            display: flex;
+            align-items: flex-start;
+            gap: 0.5rem;
+            font-weight: normal;
+            cursor: pointer;
+        }
+
+        .checkbox-label input[type="checkbox"] {
+            width: auto;
+            margin-top: 0.2rem;
+        }
+
+        .checkbox-label a {
+            color: #4f46e5;
+            text-decoration: none;
+        }
+
+        .submit-btn {
+            width: 100%;
+            padding: 1.2rem;
+            background: linear-gradient(45deg, #84fab0, #8fd3f4);
+            color: white;
+            border: none;
+            border-radius: 50px;
+            font-size: 1.1rem;
+            font-weight: 700;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .submit-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 25px rgba(132, 250, 176, 0.4);
+        }
+
+        .location-info {
+            background: white;
+            padding: 4rem 0;
+        }
+
+        .location-info h3 {
+            text-align: center;
+            font-size: 2.5rem;
+            margin-bottom: 3rem;
+            color: #333;
+            font-weight: 700;
+        }
+
+        .location-grid {
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            gap: 3rem;
+        }
+
+        .location-details {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1.5rem;
+        }
+
+        .location-card {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 2rem;
+            border-radius: 15px;
+        }
+
+        .location-card h4 {
+            font-size: 1.3rem;
+            margin-bottom: 1rem;
+            font-weight: 700;
+        }
+
+        .location-card p {
+            line-height: 1.6;
+            margin-bottom: 0.5rem;
+        }
+
+        .map-section {
+            display: flex;
+            align-items: center;
+        }
+
+        .map-placeholder {
+            background: #f8f9fa;
+            border-radius: 15px;
+            padding: 3rem 2rem;
+            text-align: center;
+            border: 2px dashed #dee2e6;
+            width: 100%;
+        }
+
+        .map-content h4 {
+            color: #333;
+            margin-bottom: 1rem;
+            font-size: 1.5rem;
+        }
+
+        .map-content p {
+            color: #666;
+            margin-bottom: 1.5rem;
+        }
+
+        .map-link {
+            background: linear-gradient(45deg, #84fab0, #8fd3f4);
+            color: white;
+            padding: 0.8rem 1.5rem;
+            text-decoration: none;
+            border-radius: 25px;
+            font-weight: 600;
+            transition: all 0.3s ease;
+        }
+
+        .map-link:hover {
+            transform: translateY(-2px);
+        }
+
+        .volunteer-info {
+            background: linear-gradient(135deg, #ffecd2 0%, #fcb69f 100%);
+            padding: 4rem 0;
+        }
+
+        .volunteer-info h3 {
+            text-align: center;
+            font-size: 2.5rem;
+            margin-bottom: 3rem;
+            color: #333;
+            font-weight: 700;
+        }
+
+        .volunteer-content {
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            gap: 3rem;
+            align-items: start;
+        }
+
+        .volunteer-text {
+            background: rgba(255, 255, 255, 0.9);
+            padding: 2.5rem;
+            border-radius: 20px;
+        }
+
+        .volunteer-text p {
+            font-size: 1.1rem;
+            line-height: 1.7;
+            color: #333;
+            margin-bottom: 2rem;
+        }
+
+        .volunteer-requirements,
+        .volunteer-benefits {
+            margin-bottom: 2rem;
+        }
+
+        .volunteer-requirements h4,
+        .volunteer-benefits h4 {
+            color: #333;
+            margin-bottom: 1rem;
+            font-size: 1.3rem;
+        }
+
+        .volunteer-requirements ul,
+        .volunteer-benefits ul {
+            list-style: none;
+            padding-left: 0;
+        }
+
+        .volunteer-requirements li,
+        .volunteer-benefits li {
+            padding: 0.5rem 0;
+            position: relative;
+            padding-left: 2rem;
+            color: #555;
+        }
+
+        .volunteer-requirements li::before {
+            content: '✓';
+            position: absolute;
+            left: 0;
+            color: #84fab0;
+            font-weight: bold;
+        }
+
+        .volunteer-benefits li::before {
+            content: '🌟';
+            position: absolute;
+            left: 0;
+        }
+
+        .apply-card {
+            background: white;
+            padding: 2.5rem;
+            border-radius: 20px;
+            text-align: center;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+        }
+
+        .apply-card h4 {
+            color: #333;
+            margin-bottom: 1.5rem;
+            font-size: 1.5rem;
+        }
+
+        .apply-card p {
+            color: #666;
+            margin-bottom: 2rem;
+            line-height: 1.6;
+        }
+
+        .apply-buttons {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+        }
+
+        .apply-btn {
+            padding: 1rem 2rem;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 600;
+            text-align: center;
+            transition: all 0.3s ease;
+        }
+
+        .apply-btn:not(.secondary) {
+            background: linear-gradient(45deg, #84fab0, #8fd3f4);
+            color: white;
+        }
+
+        .apply-btn.secondary {
+            background: transparent;
+            color: #4f46e5;
+            border: 2px solid #4f46e5;
+        }
+
+        .apply-btn:hover {
+            transform: translateY(-2px);
+        }
+
+        @media (max-width: 1024px) {
+            .contact-grid {
+                grid-template-columns: 1fr;
+                gap: 3rem;
+            }
+            
+            .location-grid,
+            .volunteer-content {
+                grid-template-columns: 1fr;
+            }
+            
+            .location-details {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .radio-group {
+                gap: 1rem;
+            }
+            
+            .contact-method {
+                flex-direction: column;
+                text-align: center;
+                gap: 1rem;
+            }
+            
+            .method-icon {
+                min-width: auto;
+            }
+        }
+    </style>
+
+    <script>
+        document.getElementById('contactForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            alert('お問い合わせありがとうございます！メール送信機能は実装中です。実際の運用時にはサーバーサイド処理が必要です。');
+        });
+    </script>
+</body>
+</html>
