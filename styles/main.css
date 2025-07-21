@@ -1126,7 +1126,75 @@ a.nav-brand:hover {
 }
 
 /* Responsive Design */
+@media (max-width: 480px) {
+    .container {
+        padding: 0 16px;
+    }
+    
+    .hero {
+        flex-direction: column;
+        text-align: center;
+        padding: 2.5rem 1rem;
+    }
+    
+    .hero-content h2 {
+        font-size: 1.8rem;
+        line-height: 1.3;
+    }
+    
+    .hero-content p {
+        font-size: 1.1rem;
+        line-height: 1.5;
+    }
+    
+    .code-block {
+        font-size: 0.85rem;
+        padding: 1rem 1.5rem;
+        min-width: 280px;
+    }
+    
+    .features h3,
+    .about h3 {
+        font-size: 2rem;
+    }
+    
+    .feature-card {
+        padding: 1.5rem 1rem;
+    }
+    
+    .feature-card h4 {
+        font-size: 1.2rem;
+    }
+    
+    .nav-menu a {
+        padding: 0.75rem 1.25rem;
+        min-height: 44px;
+    }
+    
+    .btn {
+        padding: 0.875rem 1.5rem;
+        min-height: 44px;
+        font-size: 1rem;
+    }
+    
+    .page-hero h2 {
+        font-size: 2rem;
+    }
+    
+    .activity-card {
+        padding: 1.5rem 1rem;
+    }
+    
+    .activity-card h3 {
+        font-size: 1.3rem;
+    }
+}
+
 @media (max-width: 768px) {
+    .container {
+        padding: 0 20px;
+    }
+    
     .nav {
         flex-direction: column;
         gap: 1rem;
@@ -1164,8 +1232,49 @@ a.nav-brand:hover {
         line-height: 1.2;
     }
     
+    .hero-content p {
+        font-size: 1.15rem;
+        line-height: 1.6;
+    }
+    
+    .features {
+        padding: 2.5rem 0;
+    }
+    
+    .features h3,
+    .about h3 {
+        font-size: 2.2rem;
+    }
+    
     .features-grid {
         grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+    
+    .feature-card {
+        padding: 2rem 1.5rem;
+    }
+    
+    .feature-card h4 {
+        font-size: 1.3rem;
+    }
+    
+    .about {
+        padding: 2.5rem 0;
+    }
+    
+    .organizer-intro {
+        padding: 2rem 1.5rem;
+    }
+    
+    .hero-buttons {
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+    }
+    
+    .footer {
+        padding: 2rem 0 1rem;
     }
     
     .footer-content {
@@ -1175,5 +1284,40 @@ a.nav-brand:hover {
     
     .footer-links ul {
         justify-content: center;
+        gap: 1.5rem;
+    }
+    
+    .footer-links a {
+        padding: 0.75rem 1rem;
+        min-height: 44px;
+    }
+    
+    /* Activity pages mobile improvements */
+    .page-hero {
+        padding: 3rem 0;
+    }
+    
+    .page-hero h2 {
+        font-size: 2.2rem;
+    }
+    
+    .activity-detail {
+        padding: 2.5rem 0;
+    }
+    
+    .activity-detail h3 {
+        font-size: 2rem;
+    }
+    
+    .activity-card {
+        padding: 2rem 1.5rem;
+    }
+    
+    .activity-card h3 {
+        font-size: 1.4rem;
+    }
+    
+    .activities-grid {
+        grid-template-columns: 1fr;
     }
 }
