@@ -4,13 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>活動内容 - CoderDojo HARUMI</title>
+    <link rel="icon" type="image/png" href="log.png">
+    <link rel="shortcut icon" type="image/png" href="log.png">
+    <link rel="apple-touch-icon" href="log.png">
     <link rel="stylesheet" href="styles/main.css">
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Noto+Sans+JP:wght@300;400;700&display=swap" rel="stylesheet">
 </head>
 <body>
     <header class="header">
         <nav class="nav">
             <div class="nav-brand">
+                <img src="log.png" alt="CoderDojo HARUMI" class="logo">
                 <h1>CoderDojo HARUMI</h1>
             </div>
             <ul class="nav-menu">
@@ -34,8 +38,20 @@
         <section class="activities-main">
             <div class="container">
                 <div class="activities-grid">
-                    <div class="activity-card">
-                        <div class="activity-icon">🎮</div>
+                    <a href="scratch.html" class="activity-card">
+                        <div class="activity-icon">
+                            <svg width="40" height="40" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M12 2L2 7L12 12L22 7L12 2Z" stroke="url(#activity-gradient1)" stroke-width="2" stroke-linejoin="round"/>
+                                <path d="M2 17L12 22L22 17" stroke="url(#activity-gradient1)" stroke-width="2" stroke-linejoin="round"/>
+                                <path d="M2 12L12 17L22 12" stroke="url(#activity-gradient1)" stroke-width="2" stroke-linejoin="round"/>
+                                <defs>
+                                    <linearGradient id="activity-gradient1" x1="0%" y1="0%" x2="100%" y2="100%">
+                                        <stop offset="0%" style="stop-color:#00d4ff"/>
+                                        <stop offset="100%" style="stop-color:#0ea5e9"/>
+                                    </linearGradient>
+                                </defs>
+                            </svg>
+                        </div>
                         <h3>Scratch ゲーム・アニメーション</h3>
                         <div class="activity-level">初心者〜中級者</div>
                         <p>MIT開発のビジュアルプログラミング言語Scratchを使用して、オリジナルのゲームやアニメーションを作成します。ドラッグ&ドロップで楽しくプログラミングの基礎を学べます。</p>
@@ -44,10 +60,24 @@
                             <li>所要時間: 2時間</li>
                             <li>作品例: シューティングゲーム、物語アニメーション</li>
                         </ul>
-                    </div>
+                    </a>
 
-                    <div class="activity-card">
-                        <div class="activity-icon">🤖</div>
+                    <a href="mbot2.html" class="activity-card">
+                        <div class="activity-icon">
+                            <svg width="40" height="40" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <rect x="6" y="6" width="12" height="12" rx="2" stroke="url(#activity-gradient2)" stroke-width="2"/>
+                                <circle cx="9" cy="9" r="1" fill="url(#activity-gradient2)"/>
+                                <circle cx="15" cy="9" r="1" fill="url(#activity-gradient2)"/>
+                                <path d="M9 14H15" stroke="url(#activity-gradient2)" stroke-width="2" stroke-linecap="round"/>
+                                <path d="M12 2V6M12 18V22M2 12H6M18 12H22" stroke="url(#activity-gradient2)" stroke-width="2" stroke-linecap="round"/>
+                                <defs>
+                                    <linearGradient id="activity-gradient2" x1="0%" y1="0%" x2="100%" y2="100%">
+                                        <stop offset="0%" style="stop-color:#0ea5e9"/>
+                                        <stop offset="100%" style="stop-color:#ffcc00"/>
+                                    </linearGradient>
+                                </defs>
+                            </svg>
+                        </div>
                         <h3>mBot2 ロボットプログラミング</h3>
                         <div class="activity-level">初心者〜中級者</div>
                         <p>mBot2ロボットを使って、センサーやモーターを制御するプログラムを作成します。障害物回避や音楽演奏など、実際に動くロボットで学習できます。</p>
@@ -56,10 +86,22 @@
                             <li>所要時間: 2〜3時間</li>
                             <li>作品例: 自動走行、リモコン操作、音楽ロボット</li>
                         </ul>
-                    </div>
+                    </a>
 
-                    <div class="activity-card">
-                        <div class="activity-icon">📦</div>
+                    <a href="embot.html" class="activity-card">
+                        <div class="activity-icon">
+                            <svg width="40" height="40" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M21 16V8C20.9996 7.64928 20.9071 7.30481 20.7315 7.00116C20.556 6.69751 20.3037 6.44536 20 6.27L13 2.27C12.696 2.09446 12.3511 2.00205 12 2.00205C11.6489 2.00205 11.304 2.09446 11 2.27L4 6.27C3.69626 6.44536 3.44398 6.69751 3.26846 7.00116C3.09294 7.30481 3.00036 7.64928 3 8V16C3.00036 16.3507 3.09294 16.6952 3.26846 16.9988C3.44398 17.3025 3.69626 17.5546 4 17.73L11 21.73C11.304 21.9055 11.6489 21.9979 12 21.9979C12.3511 21.9979 12.696 21.9055 13 21.73L20 17.73C20.3037 17.5546 20.556 17.3025 20.7315 16.9988C20.9071 16.6952 20.9996 16.3507 21 16Z" stroke="url(#activity-gradient3)" stroke-width="2" stroke-linejoin="round"/>
+                                <path d="M3.27 6.96L12 12.01L20.73 6.96" stroke="url(#activity-gradient3)" stroke-width="2" stroke-linejoin="round"/>
+                                <path d="M12 22.08V12" stroke="url(#activity-gradient3)" stroke-width="2" stroke-linejoin="round"/>
+                                <defs>
+                                    <linearGradient id="activity-gradient3" x1="0%" y1="0%" x2="100%" y2="100%">
+                                        <stop offset="0%" style="stop-color:#ffcc00"/>
+                                        <stop offset="100%" style="stop-color:#0ea5e9"/>
+                                    </linearGradient>
+                                </defs>
+                            </svg>
+                        </div>
                         <h3>embot ダンボールロボット</h3>
                         <div class="activity-level">初心者</div>
                         <p>ダンボール製のembotロボットを組み立てて、プログラミングで動かします。手軽に始められるロボット作りで、創造性とプログラミング思考を育みます。</p>
@@ -68,10 +110,22 @@
                             <li>所要時間: 2時間</li>
                             <li>作品例: ダンシングロボット、ペットロボット</li>
                         </ul>
-                    </div>
+                    </a>
 
-                    <div class="activity-card">
-                        <div class="activity-icon">🌐</div>
+                    <a href="web-programming.html" class="activity-card">
+                        <div class="activity-icon">
+                            <svg width="40" height="40" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="12" cy="12" r="10" stroke="url(#activity-gradient4)" stroke-width="2"/>
+                                <line x1="2" y1="12" x2="22" y2="12" stroke="url(#activity-gradient4)" stroke-width="2"/>
+                                <path d="M12 2C14.5013 4.73835 15.9228 8.29203 16 12C15.9228 15.708 14.5013 19.2616 12 22C9.49872 19.2616 8.07725 15.708 8 12C8.07725 8.29203 9.49872 4.73835 12 2Z" stroke="url(#activity-gradient4)" stroke-width="2"/>
+                                <defs>
+                                    <linearGradient id="activity-gradient4" x1="0%" y1="0%" x2="100%" y2="100%">
+                                        <stop offset="0%" style="stop-color:#00d4ff"/>
+                                        <stop offset="100%" style="stop-color:#ffcc00"/>
+                                    </linearGradient>
+                                </defs>
+                            </svg>
+                        </div>
                         <h3>Webプログラミング</h3>
                         <div class="activity-level">中級者〜上級者</div>
                         <p>HTML、CSS、JavaScriptを使って、自分だけのウェブサイトを作成します。インターネット上で動く作品を作って、世界中の人に見てもらいましょう。</p>
@@ -80,10 +134,25 @@
                             <li>所要時間: 2〜3時間</li>
                             <li>作品例: 個人サイト、ゲームサイト、紹介ページ</li>
                         </ul>
-                    </div>
+                    </a>
 
-                    <div class="activity-card">
-                        <div class="activity-icon">🧠</div>
+                    <a href="ai-programming.html" class="activity-card">
+                        <div class="activity-icon">
+                            <svg width="40" height="40" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M12 2C13.5013 4.73835 15.9228 8.29203 16 12C15.9228 15.708 13.5013 19.2616 12 22C10.4987 19.2616 8.07725 15.708 8 12C8.07725 8.29203 10.4987 4.73835 12 2Z" stroke="url(#ai-gradient)" stroke-width="2"/>
+                                <circle cx="12" cy="12" r="3" stroke="url(#ai-gradient)" stroke-width="2"/>
+                                <circle cx="12" cy="8" r="1" fill="url(#ai-gradient)"/>
+                                <circle cx="12" cy="16" r="1" fill="url(#ai-gradient)"/>
+                                <circle cx="8" cy="12" r="1" fill="url(#ai-gradient)"/>
+                                <circle cx="16" cy="12" r="1" fill="url(#ai-gradient)"/>
+                                <defs>
+                                    <linearGradient id="ai-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                                        <stop offset="0%" style="stop-color:#8b5cf6"/>
+                                        <stop offset="100%" style="stop-color:#06b6d4"/>
+                                    </linearGradient>
+                                </defs>
+                            </svg>
+                        </div>
                         <h3>AIプログラミング</h3>
                         <div class="activity-level">中級者〜上級者</div>
                         <p>人工知能（AI）を使ったプログラミングに挑戦します。画像認識や音声認識、機械学習など、最新のAI技術を体験できます。</p>
@@ -92,10 +161,24 @@
                             <li>所要時間: 3〜4時間</li>
                             <li>作品例: 画像分類、音声認識アプリ、チャットボット</li>
                         </ul>
-                    </div>
+                    </a>
 
-                    <div class="activity-card">
-                        <div class="activity-icon">🎨</div>
+                    <a href="creative-programming.html" class="activity-card">
+                        <div class="activity-icon">
+                            <svg width="40" height="40" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M12 2L3.09 8.26L4.91 9.74L12 4.42L19.09 9.74L20.91 8.26L12 2Z" fill="url(#creative-gradient)"/>
+                                <path d="M21 16C21 18.21 19.21 20 17 20H7C4.79 20 3 18.21 3 16V10C3 7.79 4.79 6 7 6H17C19.21 6 21 7.79 21 10V16Z" stroke="url(#creative-gradient)" stroke-width="2"/>
+                                <circle cx="8" cy="12" r="2" stroke="url(#creative-gradient)" stroke-width="1.5"/>
+                                <path d="M14 10L18 14M18 10L14 14" stroke="url(#creative-gradient)" stroke-width="1.5" stroke-linecap="round"/>
+                                <defs>
+                                    <linearGradient id="creative-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                                        <stop offset="0%" style="stop-color:#f59e0b"/>
+                                        <stop offset="50%" style="stop-color:#ef4444"/>
+                                        <stop offset="100%" style="stop-color:#8b5cf6"/>
+                                    </linearGradient>
+                                </defs>
+                            </svg>
+                        </div>
                         <h3>クリエイティブプログラミング</h3>
                         <div class="activity-level">初心者〜上級者</div>
                         <p>プログラミングを使ってアートや音楽を作成します。コードで絵を描いたり、アルゴリズムで音楽を生成したり、創造性を活かした作品作りに挑戦します。</p>
@@ -104,67 +187,11 @@
                             <li>所要時間: 2〜3時間</li>
                             <li>作品例: ジェネラティブアート、アルゴリズム音楽</li>
                         </ul>
-                    </div>
+                    </a>
                 </div>
             </div>
         </section>
 
-        <section class="learning-path">
-            <div class="container">
-                <h3>学習の流れ</h3>
-                <div class="path-steps">
-                    <div class="step">
-                        <div class="step-number">1</div>
-                        <div class="step-content">
-                            <h4>Scratchで基礎を学ぶ</h4>
-                            <p>ゲーム・アニメーション作りでプログラミングの楽しさを体験</p>
-                        </div>
-                    </div>
-                    <div class="step-arrow">→</div>
-                    <div class="step">
-                        <div class="step-number">2</div>
-                        <div class="step-content">
-                            <h4>ロボットで実践</h4>
-                            <p>mBot2やembotで物理的なプログラミングを体験</p>
-                        </div>
-                    </div>
-                    <div class="step-arrow">→</div>
-                    <div class="step">
-                        <div class="step-number">3</div>
-                        <div class="step-content">
-                            <h4>応用分野にチャレンジ</h4>
-                            <p>WebプログラミングやAI技術に挑戦</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section class="activity-schedule">
-            <div class="container">
-                <h3>活動スケジュール</h3>
-                <div class="schedule-info">
-                    <div class="schedule-card">
-                        <h4>📅 開催日時</h4>
-                        <p>毎月第2・第4土曜日<br>
-                        午前の部: 10:00-12:00<br>
-                        午後の部: 14:00-17:00</p>
-                    </div>
-                    <div class="schedule-card">
-                        <h4>👥 参加人数</h4>
-                        <p>各回最大20名<br>
-                        少人数制で一人ひとりに<br>
-                        丁寧にサポートします</p>
-                    </div>
-                    <div class="schedule-card">
-                        <h4>💻 持参物</h4>
-                        <p>ノートPC（貸出可能）<br>
-                        マウス（あれば）<br>
-                        やる気と好奇心！</p>
-                    </div>
-                </div>
-            </div>
-        </section>
     </main>
 
     <footer class="footer">
@@ -172,16 +199,6 @@
             <div class="footer-content">
                 <div class="footer-info">
                     <h4>CoderDojo HARUMI</h4>
-                    <p>子供たちの可能性を広げるプログラミングクラブ</p>
-                </div>
-                <div class="footer-links">
-                    <ul>
-                        <li><a href="index.html">ホーム</a></li>
-                        <li><a href="activities.html">活動内容</a></li>
-                        <li><a href="join.html">参加方法</a></li>
-                        <li><a href="blog.html">活動報告</a></li>
-                        <li><a href="contact.html">お問い合わせ</a></li>
-                    </ul>
                 </div>
             </div>
             <div class="footer-bottom">
@@ -192,21 +209,48 @@
 
     <style>
         .page-hero {
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            background: linear-gradient(135deg, #00d4ff 0%, #0ea5e9 50%, #0284c7 100%);
             color: white;
             padding: 4rem 0;
             text-align: center;
+            position: relative;
+        }
+
+        .page-hero::after {
+            content: '';
+            position: absolute;
+            bottom: -2px;
+            left: 0;
+            right: 0;
+            height: 60px;
+            background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1200 120' preserveAspectRatio='none'%3E%3Cpath d='M0,0V46.29c47.79,22.2,103.59,32.17,158,28,70.36-5.37,136.33-33.31,206.8-37.5C438.64,32.43,512.34,53.67,583,72.05c69.27,18,138.3,24.88,209.4,13.08,36.15-6,69.85-17.84,104.45-29.34C989.49,25,1113-14.29,1200,52.47V0Z' fill='%23ffffff' opacity='1'%3E%3C/path%3E%3C/svg%3E") no-repeat center bottom;
+            background-size: cover;
         }
 
         .page-hero h2 {
-            font-size: 3rem;
-            margin-bottom: 1rem;
+            font-size: 3.2rem;
             font-weight: 700;
+            margin-bottom: 1.5rem;
+            line-height: 1.1;
+            font-family: 'Inter', sans-serif;
+            letter-spacing: -0.03em;
+            color: #ffffff;
+            text-shadow: 
+                0 2px 4px rgba(0, 0, 0, 0.3),
+                0 4px 8px rgba(0, 0, 0, 0.2),
+                0 0 20px rgba(0, 0, 0, 0.1);
         }
 
         .page-hero p {
-            font-size: 1.2rem;
-            opacity: 0.9;
+            font-size: 1.25rem;
+            color: rgba(255, 255, 255, 0.95);
+            font-weight: 400;
+            line-height: 1.7;
+            font-family: 'Inter', sans-serif;
+            letter-spacing: -0.01em;
+            text-shadow: 
+                0 1px 2px rgba(0, 0, 0, 0.2),
+                0 2px 4px rgba(0, 0, 0, 0.1);
         }
 
         .activities-main {
@@ -222,43 +266,126 @@
         }
 
         .activity-card {
-            background: white;
-            border-radius: 20px;
+            background: rgba(255, 255, 255, 0.8);
+            backdrop-filter: blur(20px) saturate(180%);
             padding: 2.5rem;
-            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
-            transition: transform 0.3s ease;
-            border: 1px solid rgba(0, 0, 0, 0.05);
+            border-radius: 24px;
+            box-shadow: 
+                0 4px 6px -1px rgba(0, 0, 0, 0.1),
+                0 2px 4px -1px rgba(0, 0, 0, 0.06),
+                0 0 0 1px rgba(255, 255, 255, 0.05);
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+            border: 1px solid rgba(0, 212, 255, 0.1);
+            position: relative;
+            overflow: hidden;
+            text-decoration: none;
+            display: block;
+            color: inherit;
+        }
+
+        .activity-card:visited {
+            color: inherit;
+        }
+
+        .activity-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 3px;
+            background: linear-gradient(90deg, #00d4ff, #0ea5e9, #ffcc00);
+            opacity: 0;
+            transition: opacity 0.4s ease;
+        }
+
+        .activity-card:hover::before {
+            opacity: 1;
         }
 
         .activity-card:hover {
-            transform: translateY(-5px);
+            box-shadow: 
+                0 8px 15px -3px rgba(0, 0, 0, 0.1),
+                0 4px 6px -2px rgba(0, 0, 0, 0.05),
+                0 0 0 1px rgba(0, 212, 255, 0.1);
+            border-color: rgba(0, 212, 255, 0.2);
         }
 
         .activity-icon {
-            font-size: 3rem;
-            margin-bottom: 1.5rem;
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            width: 80px;
+            height: 80px;
+            margin: 0 0 1.5rem 0;
+            background: rgba(0, 212, 255, 0.05);
+            border-radius: 20px;
+            border: 1px solid rgba(0, 212, 255, 0.1);
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .activity-icon::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: linear-gradient(135deg, rgba(0, 212, 255, 0.1) 0%, rgba(255, 204, 0, 0.1) 100%);
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+
+        .activity-card:hover .activity-icon {
+            background: rgba(0, 212, 255, 0.1);
+            border-color: rgba(0, 212, 255, 0.3);
+        }
+
+        .activity-card:hover .activity-icon::before {
+            opacity: 1;
+        }
+
+        .activity-icon svg {
+            z-index: 1;
+            filter: drop-shadow(0 2px 4px rgba(0, 212, 255, 0.2));
+            transition: filter 0.3s ease;
+            margin-left: 20px;
+        }
+
+        .activity-card:hover .activity-icon svg {
+            filter: drop-shadow(0 2px 4px rgba(0, 212, 255, 0.3));
         }
 
         .activity-card h3 {
-            font-size: 1.5rem;
-            margin-bottom: 0.5rem;
-            color: #333;
+            font-size: 1.75rem;
+            margin-bottom: 1rem;
+            color: #1e293b;
             font-weight: 700;
+            font-family: 'Inter', sans-serif;
+            letter-spacing: -0.02em;
         }
 
         .activity-level {
-            background: linear-gradient(45deg, #4f46e5, #7c3aed);
-            color: white;
-            padding: 0.3rem 1rem;
-            border-radius: 15px;
-            font-size: 0.9rem;
+            background: rgba(100, 116, 139, 0.1);
+            color: #64748b;
+            padding: 0.3rem 0.8rem;
+            border-radius: 6px;
+            font-size: 0.8rem;
+            font-weight: 500;
             display: inline-block;
             margin-bottom: 1rem;
+            font-family: 'Inter', sans-serif;
+            letter-spacing: -0.01em;
+            border: 1px solid rgba(100, 116, 139, 0.15);
         }
 
         .activity-card p {
-            color: #666;
-            line-height: 1.6;
+            color: #64748b;
+            line-height: 1.7;
+            font-weight: 400;
+            font-family: 'Inter', sans-serif;
             margin-bottom: 1.5rem;
         }
 
@@ -272,115 +399,9 @@
             font-size: 0.9rem;
         }
 
-        .learning-path {
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            padding: 4rem 0;
-            color: white;
-        }
 
-        .learning-path h3 {
-            text-align: center;
-            font-size: 2.5rem;
-            margin-bottom: 3rem;
-            color: white;
-            font-weight: 700;
-        }
-
-        .path-steps {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            gap: 2rem;
-            flex-wrap: wrap;
-        }
-
-        .step {
-            background: white;
-            border-radius: 15px;
-            padding: 2rem;
-            text-align: center;
-            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
-            max-width: 250px;
-        }
-
-        .step-number {
-            width: 60px;
-            height: 60px;
-            background: linear-gradient(45deg, #ff6b6b, #ffa726);
-            color: white;
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 1.5rem;
-            font-weight: 700;
-            margin: 0 auto 1rem;
-        }
-
-        .step-content h4 {
-            font-size: 1.2rem;
-            margin-bottom: 0.5rem;
-            color: #333;
-        }
-
-        .step-content p {
-            color: #666;
-            font-size: 0.9rem;
-        }
-
-        .step-arrow {
-            font-size: 2rem;
-            color: #666;
-            font-weight: bold;
-        }
-
-        .activity-schedule {
-            background: white;
-            padding: 4rem 0;
-        }
-
-        .activity-schedule h3 {
-            text-align: center;
-            font-size: 2.5rem;
-            margin-bottom: 3rem;
-            color: #333;
-            font-weight: 700;
-        }
-
-        .schedule-info {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 2rem;
-            margin-top: 2rem;
-        }
-
-        .schedule-card {
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            color: white;
-            padding: 2.5rem;
-            border-radius: 20px;
-            text-align: center;
-        }
-
-        .schedule-card h4 {
-            font-size: 1.3rem;
-            margin-bottom: 1rem;
-            font-weight: 700;
-        }
-
-        .schedule-card p {
-            line-height: 1.6;
-        }
 
         @media (max-width: 768px) {
-            .path-steps {
-                flex-direction: column;
-            }
-            
-            .step-arrow {
-                transform: rotate(90deg);
-            }
-            
             .activities-grid {
                 grid-template-columns: 1fr;
             }

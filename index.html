@@ -4,13 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CoderDojo HARUMI - 子供向けプログラミングクラブ</title>
+    <link rel="icon" type="image/png" href="log.png">
+    <link rel="shortcut icon" type="image/png" href="log.png">
+    <link rel="apple-touch-icon" href="log.png">
     <link rel="stylesheet" href="styles/main.css">
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Noto+Sans+JP:wght@300;400;700&display=swap" rel="stylesheet">
 </head>
 <body>
     <header class="header">
         <nav class="nav">
             <div class="nav-brand">
+                <img src="log.png" alt="CoderDojo HARUMI" class="logo">
                 <h1>CoderDojo HARUMI</h1>
             </div>
             <ul class="nav-menu">
@@ -26,19 +30,38 @@
     <main class="main">
         <section class="hero">
             <div class="hero-content">
-                <h2>子供たちの可能性を広げる<br>プログラミングクラブ</h2>
+                <h2>未来をつくる<br>プログラミングクラブ</h2>
                 <p>CoderDojo HARUMIは、子供たちがプログラミングを楽しみながら学べるボランティア運営のクラブです。<br>
                 論理的思考能力と自己表現能力を育み、未来の可能性を一緒に広げましょう！</p>
                 <div class="hero-buttons">
-                    <a href="join.html" class="btn btn-primary">参加してみる</a>
+                    <a href="https://coderdojo-harumi.connpass.com/" class="btn btn-primary" target="_blank" rel="noopener noreferrer">参加してみる</a>
                     <a href="activities.html" class="btn btn-secondary">活動を見る</a>
                 </div>
             </div>
             <div class="hero-visual">
-                <div class="code-blocks">
-                    <div class="code-block">console.log("Hello!");</div>
-                    <div class="code-block">for (i = 0; i < 10; i++)</div>
-                    <div class="code-block">if (fun === true)</div>
+                <div class="code-terminal">
+                    <div class="code-block active">
+                        <div class="typing-text">
+                            <span class="code-comment">// 君の可能性は無限大</span><br>
+                            <span class="code-function">console</span>.<span class="code-method">log</span>(<span class="code-string">"Ready?"</span>);<span class="cursor"></span>
+                        </div>
+                    </div>
+                    <div class="code-block">
+                        <div class="typing-text">
+                            <span class="code-comment">// 夢を現実に変えていこう</span><br>
+                            <span class="code-keyword">while</span> (<span class="code-variable">dream</span>) {<br>
+                            &nbsp;&nbsp;<span class="code-function">reality</span>.<span class="code-method">create</span>(<span class="code-variable">dream</span>);<br>
+                            }<span class="cursor"></span>
+                        </div>
+                    </div>
+                    <div class="code-block">
+                        <div class="typing-text">
+                            <span class="code-comment">// 一緒に世界を変えよう</span><br>
+                            <span class="code-keyword">if</span> (<span class="code-variable">we</span> === <span class="code-string">"together"</span>) {<br>
+                            &nbsp;&nbsp;<span class="code-function">world</span>.<span class="code-method">change</span>();<br>
+                            }<span class="cursor"></span>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
@@ -48,23 +71,70 @@
                 <h3>CoderDojo HARUMIの特徴</h3>
                 <div class="features-grid">
                     <div class="feature-card">
-                        <div class="feature-icon">🎮</div>
-                        <h4>楽しく学ぶ</h4>
+                        <div class="feature-icon">
+                            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M12 2L2 7L12 12L22 7L12 2Z" stroke="url(#gradient1)" stroke-width="2" stroke-linejoin="round"/>
+                                <path d="M2 17L12 22L22 17" stroke="url(#gradient1)" stroke-width="2" stroke-linejoin="round"/>
+                                <path d="M2 12L12 17L22 12" stroke="url(#gradient1)" stroke-width="2" stroke-linejoin="round"/>
+                                <defs>
+                                    <linearGradient id="gradient1" x1="0%" y1="0%" x2="100%" y2="100%">
+                                        <stop offset="0%" style="stop-color:#00d4ff"/>
+                                        <stop offset="100%" style="stop-color:#ffcc00"/>
+                                    </linearGradient>
+                                </defs>
+                            </svg>
+                        </div>
+                        <h4>インタラクティブ学習</h4>
                         <p>ゲームやロボットを使って、楽しみながらプログラミングの基礎を身につけます</p>
                     </div>
                     <div class="feature-card">
-                        <div class="feature-icon">🧠</div>
-                        <h4>論理的思考を育む</h4>
+                        <div class="feature-icon">
+                            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M9.5 2L8 6L2 6.5L6 10L4.5 16L9.5 14L14.5 16L13 10L17 6.5L11 6L9.5 2Z" stroke="url(#gradient2)" stroke-width="2" stroke-linejoin="round"/>
+                                <path d="M12 8V16M8 12H16" stroke="url(#gradient2)" stroke-width="2" stroke-linecap="round"/>
+                                <defs>
+                                    <linearGradient id="gradient2" x1="0%" y1="0%" x2="100%" y2="100%">
+                                        <stop offset="0%" style="stop-color:#00d4ff"/>
+                                        <stop offset="100%" style="stop-color:#0ea5e9"/>
+                                    </linearGradient>
+                                </defs>
+                            </svg>
+                        </div>
+                        <h4>ロジカルシンキング</h4>
                         <p>プログラミングを通じて、問題解決能力と論理的思考力を自然に身につけます</p>
                     </div>
                     <div class="feature-card">
-                        <div class="feature-icon">✨</div>
-                        <h4>自己表現力アップ</h4>
+                        <div class="feature-icon">
+                            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M12 2L15.5 8.5L22 9L17 14L18.5 21L12 17.5L5.5 21L7 14L2 9L8.5 8.5L12 2Z" stroke="url(#gradient3)" stroke-width="2" stroke-linejoin="round"/>
+                                <circle cx="12" cy="12" r="3" stroke="url(#gradient3)" stroke-width="2"/>
+                                <defs>
+                                    <linearGradient id="gradient3" x1="0%" y1="0%" x2="100%" y2="100%">
+                                        <stop offset="0%" style="stop-color:#ffcc00"/>
+                                        <stop offset="100%" style="stop-color:#00d4ff"/>
+                                    </linearGradient>
+                                </defs>
+                            </svg>
+                        </div>
+                        <h4>クリエイティビティ</h4>
                         <p>自分のアイデアをプログラムで表現し、創造性と発表力を伸ばします</p>
                     </div>
                     <div class="feature-card">
-                        <div class="feature-icon">👥</div>
-                        <h4>仲間と一緒に</h4>
+                        <div class="feature-icon">
+                            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M17 21V19C17 17.9391 16.5786 16.9217 15.8284 16.1716C15.0783 15.4214 14.0609 15 13 15H5C3.93913 15 2.92172 15.4214 2.17157 16.1716C1.42143 16.9217 1 17.9391 1 19V21" stroke="url(#gradient4)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <circle cx="9" cy="7" r="4" stroke="url(#gradient4)" stroke-width="2"/>
+                                <path d="M23 21V19C23 18.1645 22.7155 17.3581 22.2094 16.7169C21.7033 16.0757 20.0078 15.6428 19 15.2498" stroke="url(#gradient4)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M16 3.13C17.0093 3.52251 17.7044 4.41323 17.8985 5.48993C18.0926 6.56662 17.7647 7.68327 17.0013 8.49499C16.2379 9.30671 15.1203 9.72595 14.0139 9.61693C12.9075 9.50791 11.8993 8.88781 11.2685 7.93" stroke="url(#gradient4)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <defs>
+                                    <linearGradient id="gradient4" x1="0%" y1="0%" x2="100%" y2="100%">
+                                        <stop offset="0%" style="stop-color:#0ea5e9"/>
+                                        <stop offset="100%" style="stop-color:#ffcc00"/>
+                                    </linearGradient>
+                                </defs>
+                            </svg>
+                        </div>
+                        <h4>コラボレーション</h4>
                         <p>同年代の仲間と協力しながら、チームワークとコミュニケーション力を養います</p>
                     </div>
                 </div>
@@ -78,17 +148,287 @@
                     <div class="about-text">
                         <p>CoderDojo HARUMIは、7歳から17歳の子供・青少年を対象とした非営利のプログラミングクラブです。</p>
                         <p>2011年にアイルランドで始まったCoderDojoの理念に基づき、子供たちが自主的にプログラミングを学び、創造性を発揮できる場を提供しています。</p>
+                        <p>私たちは<a href="https://coderdojo.jp/charter" target="_blank" rel="noopener noreferrer"><strong>CoderDojo憲章</strong></a>に従って活動し、性別、人種、信条、宗教、能力に関わらず、すべての子供とボランティアを歓迎します。完全無料で、オープンで包括的なコミュニティを維持し、子供たちの保護を最優先に考えています。</p>
+                        <p>CoderDojo HARUMIは、中央区にあるマンション晴海フラッグの地域住民有志により2024年9月に立ち上げました。運営メンバーが協力し合い、試行錯誤しながらより良い運営を目指しています。</p>
                         <p>経験豊富なメンター（指導者）がボランティアでサポートし、一人ひとりのペースに合わせた学習をお手伝いします。</p>
                         <ul class="about-features">
+                            <li><a href="https://coderdojo.jp/charter" target="_blank" rel="noopener noreferrer">CoderDojo憲章</a>に基づく運営</li>
                             <li>完全無料の活動</li>
+                            <li>すべての子供を歓迎する包括的環境</li>
                             <li>個人のペースに合わせた学習</li>
                             <li>実践的なプログラミング体験</li>
                             <li>作品発表とフィードバック</li>
+                            <li>知識の自由な共有</li>
+                            <li>参加者同士のコラボレーション</li>
                         </ul>
+                        
+                        <div class="organizer-intro">
+                            <h4>🎯 代表者紹介</h4>
+                            <div class="organizer-profile">
+                                <p><strong>MATSUMOTO Hirofumi</strong></p>
+                                <p>都内のCoderDojoを見学した際、2人の子供が協力して楽しそうにゲームを作っている姿を見て、自分たちの住む地域でも同様の体験を提供できないかと考え、CoderDojo HARUMIを立ち上げました。晴海エリアに在住しています。</p>
+                            </div>
+                        </div>
+                        
+                        <div class="mentor-recruitment">
+                            <h4>🤝 メンター・ボランティア募集</h4>
+                            <p>子供たちの「なぜ？」「どうして？」に一緒に向き合ってくださる方を募集中。プログラミング経験は不要です。教えるよりも、一緒に考える仲間として参加してみませんか？</p>
+                            <a href="https://coderdojo-harumi.connpass.com/" class="mentor-apply-btn" target="_blank" rel="noopener noreferrer">
+                                Connpassで申し込み・詳細確認
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
+
+        <section class="faq-section">
+            <div class="container">
+                <h3>よくある質問</h3>
+                <div class="faq-content">
+                    <div class="faq-grid">
+                        <div class="faq-card">
+                            <div class="faq-icon">
+                                <svg width="48" height="48" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="12" cy="12" r="10" stroke="url(#faq-gradient1)" stroke-width="2"/>
+                                    <path d="M9.5 8.5C9.5 7.11929 10.6193 6 12 6C13.3807 6 14.5 7.11929 14.5 8.5C14.5 9.88071 13.3807 11 12 11" stroke="url(#faq-gradient1)" stroke-width="2" stroke-linecap="round"/>
+                                    <circle cx="12" cy="16" r="1" fill="url(#faq-gradient1)"/>
+                                    <defs>
+                                        <linearGradient id="faq-gradient1" x1="0%" y1="0%" x2="100%" y2="100%">
+                                            <stop offset="0%" style="stop-color:#00d4ff"/>
+                                            <stop offset="100%" style="stop-color:#0ea5e9"/>
+                                        </linearGradient>
+                                    </defs>
+                                </svg>
+                            </div>
+                            <h4>プログラミング経験がないのですが参加できますか？</h4>
+                            <p>もちろんです！CoderDojoは初心者大歓迎です。Scratchなど視覚的なツールから始めるので、文字が読めれば小学1年生からでも楽しめます。</p>
+                        </div>
+
+                        <div class="faq-card">
+                            <div class="faq-icon">
+                                <svg width="48" height="48" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="12" cy="12" r="10" stroke="url(#faq-gradient2)" stroke-width="2"/>
+                                    <path d="M8 14S9.5 16 12 16S16 14 16 14" stroke="url(#faq-gradient2)" stroke-width="2" stroke-linecap="round"/>
+                                    <circle cx="9" cy="9" r="1" fill="url(#faq-gradient2)"/>
+                                    <circle cx="15" cy="9" r="1" fill="url(#faq-gradient2)"/>
+                                    <defs>
+                                        <linearGradient id="faq-gradient2" x1="0%" y1="0%" x2="100%" y2="100%">
+                                            <stop offset="0%" style="stop-color:#0ea5e9"/>
+                                            <stop offset="100%" style="stop-color:#ffcc00"/>
+                                        </linearGradient>
+                                    </defs>
+                                </svg>
+                            </div>
+                            <h4>パソコンを持っていませんが参加できますか？</h4>
+                            <p>大丈夫です！貸出用のパソコンをご用意しています。事前にお知らせいただければ確実に準備できます。</p>
+                        </div>
+
+                        <div class="faq-card">
+                            <div class="faq-icon">
+                                <svg width="48" height="48" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M17 21V19C17 17.9391 16.5786 16.9217 15.8284 16.1716C15.0783 15.4214 14.0609 15 13 15H5C3.93913 15 2.92172 15.4214 2.17157 16.1716C1.42143 16.9217 1 17.9391 1 19V21" stroke="url(#faq-gradient3)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <circle cx="9" cy="7" r="4" stroke="url(#faq-gradient3)" stroke-width="2"/>
+                                    <path d="M23 21V19C23 18.1645 22.7155 17.3581 22.2094 16.7169C21.7033 16.0757 20.0078 15.6428 19 15.2498" stroke="url(#faq-gradient3)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M16 3.13C17.0093 3.52251 17.7044 4.41323 17.8985 5.48993C18.0926 6.56662 17.7647 7.68327 17.0013 8.49499C16.2379 9.30671 15.1203 9.72595 14.0139 9.61693C12.9075 9.50791 11.8993 8.88781 11.2685 7.93" stroke="url(#faq-gradient3)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <defs>
+                                        <linearGradient id="faq-gradient3" x1="0%" y1="0%" x2="100%" y2="100%">
+                                            <stop offset="0%" style="stop-color:#ffcc00"/>
+                                            <stop offset="100%" style="stop-color:#00d4ff"/>
+                                        </linearGradient>
+                                    </defs>
+                                </svg>
+                            </div>
+                            <h4>毎回参加する必要がありますか？</h4>
+                            <p>全く必要ありません。お子様や保護者の都合に合わせて、気軽に参加していただけます。月1回でも、たまにでも大丈夫です。</p>
+                        </div>
+
+                        <div class="faq-card">
+                            <div class="faq-icon">
+                                <svg width="48" height="48" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="12" cy="12" r="10" stroke="url(#faq-gradient4)" stroke-width="2"/>
+                                    <path d="M9.5 8.5C9.5 7.11929 10.6193 6 12 6C13.3807 6 14.5 7.11929 14.5 8.5C14.5 9.88071 13.3807 11 12 11" stroke="url(#faq-gradient4)" stroke-width="2" stroke-linecap="round"/>
+                                    <circle cx="12" cy="16" r="1" fill="url(#faq-gradient4)"/>
+                                    <defs>
+                                        <linearGradient id="faq-gradient4" x1="0%" y1="0%" x2="100%" y2="100%">
+                                            <stop offset="0%" style="stop-color:#0ea5e9"/>
+                                            <stop offset="100%" style="stop-color:#ffcc00"/>
+                                        </linearGradient>
+                                    </defs>
+                                </svg>
+                            </div>
+                            <h4>子供が集中できるか心配です</h4>
+                            <p>無理強いはしません。お子様のペースに合わせて進めます。疲れたら休憩、飽きたら別の活動に切り替えることも可能です。</p>
+                        </div>
+
+                        <div class="faq-card">
+                            <div class="faq-icon">
+                                <svg width="48" height="48" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="12" cy="12" r="10" stroke="url(#faq-gradient5)" stroke-width="2"/>
+                                    <path d="M8 14S9.5 16 12 16S16 14 16 14" stroke="url(#faq-gradient5)" stroke-width="2" stroke-linecap="round"/>
+                                    <circle cx="9" cy="9" r="1" fill="url(#faq-gradient5)"/>
+                                    <circle cx="15" cy="9" r="1" fill="url(#faq-gradient5)"/>
+                                    <defs>
+                                        <linearGradient id="faq-gradient5" x1="0%" y1="0%" x2="100%" y2="100%">
+                                            <stop offset="0%" style="stop-color:#ffcc00"/>
+                                            <stop offset="100%" style="stop-color:#00d4ff"/>
+                                        </linearGradient>
+                                    </defs>
+                                </svg>
+                            </div>
+                            <h4>保護者はずっと付き添う必要がありますか？</h4>
+                            <p>13歳未満は保護者同伴が原則ですが、お子様が慣れてきたら少し離れていただいても構いません。見学だけでも、一緒に学んでいただいても大歓迎です。</p>
+                        </div>
+
+                        <div class="faq-card">
+                            <div class="faq-icon">
+                                <svg width="48" height="48" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M17 21V19C17 17.9391 16.5786 16.9217 15.8284 16.1716C15.0783 15.4214 14.0609 15 13 15H5C3.93913 15 2.92172 15.4214 2.17157 16.1716C1.42143 16.9217 1 17.9391 1 19V21" stroke="url(#faq-gradient6)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <circle cx="9" cy="7" r="4" stroke="url(#faq-gradient6)" stroke-width="2"/>
+                                    <path d="M23 21V19C23 18.1645 22.7155 17.3581 22.2094 16.7169C21.7033 16.0757 20.0078 15.6428 19 15.2498" stroke="url(#faq-gradient6)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M16 3.13C17.0093 3.52251 17.7044 4.41323 17.8985 5.48993C18.0926 6.56662 17.7647 7.68327 17.0013 8.49499C16.2379 9.30671 15.1203 9.72595 14.0139 9.61693C12.9075 9.50791 11.8993 8.88781 11.2685 7.93" stroke="url(#faq-gradient6)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <defs>
+                                        <linearGradient id="faq-gradient6" x1="0%" y1="0%" x2="100%" y2="100%">
+                                            <stop offset="0%" style="stop-color:#00d4ff"/>
+                                            <stop offset="100%" style="stop-color:#0ea5e9"/>
+                                        </linearGradient>
+                                    </defs>
+                                </svg>
+                            </div>
+                            <h4>うちの子は内向的で心配です</h4>
+                            <p>内向的なお子様も多く参加されています。無理に話しかけることはせず、お子様のペースを大切にします。プログラミングを通じて自然と交流が生まれることも多いです。</p>
+                        </div>
+
+                        <div class="faq-card">
+                            <div class="faq-icon">
+                                <svg width="48" height="48" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="12" cy="12" r="10" stroke="url(#faq-gradient7)" stroke-width="2"/>
+                                    <path d="M9.5 8.5C9.5 7.11929 10.6193 6 12 6C13.3807 6 14.5 7.11929 14.5 8.5C14.5 9.88071 13.3807 11 12 11" stroke="url(#faq-gradient7)" stroke-width="2" stroke-linecap="round"/>
+                                    <circle cx="12" cy="16" r="1" fill="url(#faq-gradient7)"/>
+                                    <defs>
+                                        <linearGradient id="faq-gradient7" x1="0%" y1="0%" x2="100%" y2="100%">
+                                            <stop offset="0%" style="stop-color:#0ea5e9"/>
+                                            <stop offset="100%" style="stop-color:#ffcc00"/>
+                                        </linearGradient>
+                                    </defs>
+                                </svg>
+                            </div>
+                            <h4>年齢が異なる子供たちと一緒で大丈夫でしょうか？</h4>
+                            <p>年齢に応じた内容で進めますし、年上の子が年下の子を教えたり、逆に年下の子の発想に年上の子が刺激を受けたりと、良い影響を与え合っています。</p>
+                        </div>
+
+                        <div class="faq-card">
+                            <div class="faq-icon">
+                                <svg width="48" height="48" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="12" cy="12" r="10" stroke="url(#faq-gradient8)" stroke-width="2"/>
+                                    <path d="M8 14S9.5 16 12 16S16 14 16 14" stroke="url(#faq-gradient8)" stroke-width="2" stroke-linecap="round"/>
+                                    <circle cx="9" cy="9" r="1" fill="url(#faq-gradient8)"/>
+                                    <circle cx="15" cy="9" r="1" fill="url(#faq-gradient8)"/>
+                                    <defs>
+                                        <linearGradient id="faq-gradient8" x1="0%" y1="0%" x2="100%" y2="100%">
+                                            <stop offset="0%" style="stop-color:#ffcc00"/>
+                                            <stop offset="100%" style="stop-color:#00d4ff"/>
+                                        </linearGradient>
+                                    </defs>
+                                </svg>
+                            </div>
+                            <h4>女の子でも参加できますか？</h4>
+                            <p>もちろんです！男女関係なく多くの子供たちが参加しています。プログラミングに性別は関係ありません。</p>
+                        </div>
+
+                        <div class="faq-card">
+                            <div class="faq-icon">
+                                <svg width="48" height="48" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M17 21V19C17 17.9391 16.5786 16.9217 15.8284 16.1716C15.0783 15.4214 14.0609 15 13 15H5C3.93913 15 2.92172 15.4214 2.17157 16.1716C1.42143 16.9217 1 17.9391 1 19V21" stroke="url(#faq-gradient9)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <circle cx="9" cy="7" r="4" stroke="url(#faq-gradient9)" stroke-width="2"/>
+                                    <path d="M23 21V19C23 18.1645 22.7155 17.3581 22.2094 16.7169C21.7033 16.0757 20.0078 15.6428 19 15.2498" stroke="url(#faq-gradient9)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M16 3.13C17.0093 3.52251 17.7044 4.41323 17.8985 5.48993C18.0926 6.56662 17.7647 7.68327 17.0013 8.49499C16.2379 9.30671 15.1203 9.72595 14.0139 9.61693C12.9075 9.50791 11.8993 8.88781 11.2685 7.93" stroke="url(#faq-gradient9)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <defs>
+                                        <linearGradient id="faq-gradient9" x1="0%" y1="0%" x2="100%" y2="100%">
+                                            <stop offset="0%" style="stop-color:#00d4ff"/>
+                                            <stop offset="100%" style="stop-color:#0ea5e9"/>
+                                        </linearGradient>
+                                    </defs>
+                                </svg>
+                            </div>
+                            <h4>参加をやめたいときはどうすればいいですか？</h4>
+                            <p>いつでも自由にやめていただけます。特別な手続きは不要で、来なくなるだけで大丈夫です。また参加したくなったらいつでも歓迎します。</p>
+                        </div>
+
+                        <div class="faq-card">
+                            <div class="faq-icon">
+                                <svg width="48" height="48" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="12" cy="12" r="10" stroke="url(#faq-gradient10)" stroke-width="2"/>
+                                    <path d="M9.5 8.5C9.5 7.11929 10.6193 6 12 6C13.3807 6 14.5 7.11929 14.5 8.5C14.5 9.88071 13.3807 11 12 11" stroke="url(#faq-gradient10)" stroke-width="2" stroke-linecap="round"/>
+                                    <circle cx="12" cy="16" r="1" fill="url(#faq-gradient10)"/>
+                                    <defs>
+                                        <linearGradient id="faq-gradient10" x1="0%" y1="0%" x2="100%" y2="100%">
+                                            <stop offset="0%" style="stop-color:#0ea5e9"/>
+                                            <stop offset="100%" style="stop-color:#ffcc00"/>
+                                        </linearGradient>
+                                    </defs>
+                                </svg>
+                            </div>
+                            <h4>見学だけでも大丈夫ですか？</h4>
+                            <p>もちろんです！まずは雰囲気を見て、お子様に合うかどうか確認してください。見学後の参加は全く義務ではありません。</p>
+                        </div>
+
+                        <div class="faq-card">
+                            <div class="faq-icon">
+                                <svg width="48" height="48" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="12" cy="12" r="10" stroke="url(#faq-gradient11)" stroke-width="2"/>
+                                    <path d="M8 14S9.5 16 12 16S16 14 16 14" stroke="url(#faq-gradient11)" stroke-width="2" stroke-linecap="round"/>
+                                    <circle cx="9" cy="9" r="1" fill="url(#faq-gradient11)"/>
+                                    <circle cx="15" cy="9" r="1" fill="url(#faq-gradient11)"/>
+                                    <defs>
+                                        <linearGradient id="faq-gradient11" x1="0%" y1="0%" x2="100%" y2="100%">
+                                            <stop offset="0%" style="stop-color:#ffcc00"/>
+                                            <stop offset="100%" style="stop-color:#00d4ff"/>
+                                        </linearGradient>
+                                    </defs>
+                                </svg>
+                            </div>
+                            <h4>家庭でのサポートはどの程度必要ですか？</h4>
+                            <p>CoderDojo内で完結するよう心がけています。もしお子様が家で続けたがったら簡単にできることをお教えしますが、無理にする必要はありません。</p>
+                        </div>
+
+                        <div class="faq-card">
+                            <div class="faq-icon">
+                                <svg width="48" height="48" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M17 21V19C17 17.9391 16.5786 16.9217 15.8284 16.1716C15.0783 15.4214 14.0609 15 13 15H5C3.93913 15 2.92172 15.4214 2.17157 16.1716C1.42143 16.9217 1 17.9391 1 19V21" stroke="url(#faq-gradient12)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <circle cx="9" cy="7" r="4" stroke="url(#faq-gradient12)" stroke-width="2"/>
+                                    <path d="M23 21V19C23 18.1645 22.7155 17.3581 22.2094 16.7169C21.7033 16.0757 20.0078 15.6428 19 15.2498" stroke="url(#faq-gradient12)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M16 3.13C17.0093 3.52251 17.7044 4.41323 17.8985 5.48993C18.0926 6.56662 17.7647 7.68327 17.0013 8.49499C16.2379 9.30671 15.1203 9.72595 14.0139 9.61693C12.9075 9.50791 11.8993 8.88781 11.2685 7.93" stroke="url(#faq-gradient12)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <defs>
+                                        <linearGradient id="faq-gradient12" x1="0%" y1="0%" x2="100%" y2="100%">
+                                            <stop offset="0%" style="stop-color:#00d4ff"/>
+                                            <stop offset="100%" style="stop-color:#0ea5e9"/>
+                                        </linearGradient>
+                                    </defs>
+                                </svg>
+                            </div>
+                            <h4>費用は本当にかからないのですか？</h4>
+                            <p>完全無料です。教材費、会場費、指導料など一切かかりません。寄付は受け付けていますが、全く強制ではありません。</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="related-links-section">
+            <div class="container">
+                <h3>関連情報</h3>
+                <div class="related-links-simple">
+                    <a href="https://coderdojo.jp/" target="_blank" rel="noopener noreferrer" class="related-simple-link">
+                        CoderDojo JAPAN
+                    </a>
+                    <a href="https://dojocon2024.coderdojo.jp/" target="_blank" rel="noopener noreferrer" class="related-simple-link">
+                        DojoCon Japan
+                    </a>
+                </div>
+            </div>
+        </section>
+
     </main>
 
     <footer class="footer">
@@ -96,16 +436,6 @@
             <div class="footer-content">
                 <div class="footer-info">
                     <h4>CoderDojo HARUMI</h4>
-                    <p>子供たちの可能性を広げるプログラミングクラブ</p>
-                </div>
-                <div class="footer-links">
-                    <ul>
-                        <li><a href="index.html">ホーム</a></li>
-                        <li><a href="activities.html">活動内容</a></li>
-                        <li><a href="join.html">参加方法</a></li>
-                        <li><a href="blog.html">活動報告</a></li>
-                        <li><a href="contact.html">お問い合わせ</a></li>
-                    </ul>
                 </div>
             </div>
             <div class="footer-bottom">
@@ -113,5 +443,49 @@
             </div>
         </div>
     </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            console.log('DOM loaded');
+            
+            const codeBlocks = document.querySelectorAll('.code-block');
+            
+            console.log('Found code blocks:', codeBlocks.length);
+            
+            if (codeBlocks.length === 0) {
+                console.error('No code blocks found!');
+                return;
+            }
+
+            let currentIndex = 0;
+
+            function showBlock(index) {
+                // Hide all blocks
+                codeBlocks.forEach((block, i) => {
+                    block.classList.remove('active');
+                    block.style.setProperty('opacity', '0', 'important');
+                });
+                
+                // Smooth transition to new block
+                setTimeout(() => {
+                    const currentBlock = codeBlocks[index];
+                    currentBlock.classList.add('active');
+                    currentBlock.style.setProperty('opacity', '1', 'important');
+                }, 300);
+            }
+
+            function nextBlock() {
+                currentIndex = (currentIndex + 1) % codeBlocks.length;
+                console.log('Next block index:', currentIndex);
+                showBlock(currentIndex);
+            }
+
+            // Show first block immediately
+            showBlock(0);
+            
+            // Start cycling after 5 seconds for comfortable pace
+            setInterval(nextBlock, 5000);
+        });
+    </script>
 </body>
 </html>

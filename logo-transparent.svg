@@ -1,0 +1,40 @@
+<svg width="200" height="200" viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Outer circle -->
+  <circle cx="100" cy="100" r="95" fill="url(#gradient1)"/>
+  
+  <!-- Inner yin-yang symbol -->
+  <g transform="translate(100, 80)">
+    <!-- Main yin-yang circle -->
+    <circle cx="0" cy="0" r="30" fill="white"/>
+    <path d="M 0,-30 A 30,30 0 0,0 0,30 A 15,15 0 0,1 0,0 A 15,15 0 0,0 0,-30 Z" fill="url(#gradient2)"/>
+    
+    <!-- Small circles -->
+    <circle cx="0" cy="-15" r="5" fill="url(#gradient2)"/>
+    <circle cx="0" cy="15" r="5" fill="white"/>
+    
+    <!-- Numbers -->
+    <text x="0" y="-12" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="white">0</text>
+    <text x="0" y="20" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="url(#gradient2)">1</text>
+  </g>
+  
+  <!-- Wave pattern -->
+  <g transform="translate(0, 140)">
+    <path d="M20 0 Q50 -10 80 0 T140 0 Q170 -10 200 0 L200 20 Q170 10 140 20 T80 20 Q50 10 20 20 Z" fill="url(#gradient1)" opacity="0.8"/>
+    <path d="M20 15 Q50 5 80 15 T140 15 Q170 5 200 15 L200 35 Q170 25 140 35 T80 35 Q50 25 20 35 Z" fill="url(#gradient1)" opacity="0.6"/>
+  </g>
+  
+  <!-- Text -->
+  <text x="100" y="175" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="white">CoderDojo HARUMI</text>
+  
+  <defs>
+    <linearGradient id="gradient1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#00d4ff"/>
+      <stop offset="50%" style="stop-color:#0ea5e9"/>
+      <stop offset="100%" style="stop-color:#00d4ff"/>
+    </linearGradient>
+    <linearGradient id="gradient2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#ffcc00"/>
+      <stop offset="100%" style="stop-color:#ff9500"/>
+    </linearGradient>
+  </defs>
+</svg>

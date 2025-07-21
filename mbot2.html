@@ -1,0 +1,656 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>mBot2 ロボットプログラミング - CoderDojo HARUMI</title>
+    <link rel="icon" type="image/png" href="log.png">
+    <link rel="shortcut icon" type="image/png" href="log.png">
+    <link rel="apple-touch-icon" href="log.png">
+    <link rel="stylesheet" href="styles/main.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Noto+Sans+JP:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <nav class="nav">
+            <div class="nav-brand">
+                <img src="log.png" alt="CoderDojo HARUMI" class="logo">
+                <h1>CoderDojo HARUMI</h1>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html">ホーム</a></li>
+                <li><a href="activities.html">活動内容</a></li>
+                <li><a href="join.html">参加方法</a></li>
+                <li><a href="blog.html">活動報告</a></li>
+                <li><a href="contact.html">お問い合わせ</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="main">
+        <section class="page-hero">
+            <div class="container">
+                <h2>mBot2 ロボットプログラミング</h2>
+                <p>実際に動くロボットをプログラミングで制御しよう！</p>
+            </div>
+        </section>
+
+        <section class="activity-detail">
+            <div class="container">
+                <div class="activity-overview">
+                    <div class="overview-content">
+                        <h3>mBot2について</h3>
+                        <p>mBot2は、プログラミング教育用に開発された小型ロボットです。超音波センサー、光センサー、ジャイロスコープなど様々なセンサーを搭載し、車輪で移動できます。ブロックプログラミングでロボットを自在に操作できます。</p>
+                        
+                        <div class="activity-features">
+                            <div class="feature-item">
+                                <h4>🎯 対象年齢</h4>
+                                <p>8歳〜 (ロボット操作に興味がある子)</p>
+                            </div>
+                            <div class="feature-item">
+                                <h4>⏱️ 所要時間</h4>
+                                <p>1プロジェクトあたり2〜3時間</p>
+                            </div>
+                            <div class="feature-item">
+                                <h4>📈 難易度</h4>
+                                <p>初心者〜中級者向け</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="overview-image">
+                        <div class="image-placeholder">
+                            <div class="placeholder-content">
+                                <h4>🤖 mBot2ロボット</h4>
+                                <p>青いボディに様々なセンサーを搭載</p>
+                                <div class="robot-features">
+                                    <div class="robot-part">🔊 スピーカー</div>
+                                    <div class="robot-part">👁️ 超音波センサー</div>
+                                    <div class="robot-part">💡 LEDライト</div>
+                                    <div class="robot-part">🔘 タッチセンサー</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="learning-content">
+                    <h3>学べること</h3>
+                    <div class="learning-grid">
+                        <div class="learning-card">
+                            <div class="learning-icon">📡</div>
+                            <h4>センサー制御</h4>
+                            <p>距離、光、音などのセンサーからの情報を読み取り、それに応じてロボットを動かします</p>
+                        </div>
+                        <div class="learning-card">
+                            <div class="learning-icon">🎮</div>
+                            <h4>モーター制御</h4>
+                            <p>左右の車輪を独立して制御し、前進・後退・旋回などの動きを実現します</p>
+                        </div>
+                        <div class="learning-card">
+                            <div class="learning-icon">🔄</div>
+                            <h4>フィードバック制御</h4>
+                            <p>センサーからの情報をもとに、ロボットの行動を自動調整する仕組みを学びます</p>
+                        </div>
+                        <div class="learning-card">
+                            <div class="learning-icon">🏗️</div>
+                            <h4>システム思考</h4>
+                            <p>複数の部品が連携して動く「システム」について理解を深めます</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-examples">
+                    <h3>プロジェクト例</h3>
+                    <div class="examples-grid">
+                        <div class="example-card">
+                            <div class="example-image robot-avoid">
+                                <div class="example-placeholder">
+                                    <div class="example-icon">🚧</div>
+                                    <h4>障害物回避</h4>
+                                </div>
+                            </div>
+                            <div class="example-content">
+                                <h4>自動運転ロボット</h4>
+                                <p>超音波センサーで前方の障害物を検知し、自動的に方向を変えて避ける自律走行ロボットを作ります。</p>
+                                <div class="example-skills">
+                                    <span class="skill-tag">超音波センサー</span>
+                                    <span class="skill-tag">モーター制御</span>
+                                    <span class="skill-tag">条件分岐</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="example-card">
+                            <div class="example-image robot-light">
+                                <div class="example-placeholder">
+                                    <div class="example-icon">💡</div>
+                                    <h4>ライントレーサー</h4>
+                                </div>
+                            </div>
+                            <div class="example-content">
+                                <h4>線をたどるロボット</h4>
+                                <p>光センサーを使って床の黒い線を認識し、その線に沿って自動的に走行するロボットを製作します。</p>
+                                <div class="example-skills">
+                                    <span class="skill-tag">光センサー</span>
+                                    <span class="skill-tag">PID制御</span>
+                                    <span class="skill-tag">キャリブレーション</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="example-card">
+                            <div class="example-image robot-music">
+                                <div class="example-placeholder">
+                                    <div class="example-icon">🎵</div>
+                                    <h4>音楽ロボット</h4>
+                                </div>
+                            </div>
+                            <div class="example-content">
+                                <h4>踊る音楽ロボット</h4>
+                                <p>音楽に合わせて踊るロボットや、タッチセンサーで楽器のように音を奏でるロボットを作成します。</p>
+                                <div class="example-skills">
+                                    <span class="skill-tag">音楽制御</span>
+                                    <span class="skill-tag">タッチセンサー</span>
+                                    <span class="skill-tag">LEDアニメーション</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="technical-specs">
+                    <h3>mBot2の機能</h3>
+                    <div class="specs-grid">
+                        <div class="spec-category">
+                            <h4>センサー類</h4>
+                            <ul>
+                                <li>超音波センサー（距離測定）</li>
+                                <li>光センサー（明るさ検知）</li>
+                                <li>ジャイロスコープ（姿勢検知）</li>
+                                <li>タッチセンサー（接触検知）</li>
+                                <li>マイク（音声入力）</li>
+                            </ul>
+                        </div>
+                        <div class="spec-category">
+                            <h4>出力装置</h4>
+                            <ul>
+                                <li>DCモーター×2（車輪駆動）</li>
+                                <li>RGB LEDマトリックス</li>
+                                <li>スピーカー（音声・音楽）</li>
+                                <li>赤外線LED（通信用）</li>
+                            </ul>
+                        </div>
+                        <div class="spec-category">
+                            <h4>プログラミング</h4>
+                            <ul>
+                                <li>mBlock（ブロックプログラミング）</li>
+                                <li>Python（テキストプログラミング）</li>
+                                <li>スマホアプリでリモート制御</li>
+                                <li>Wi-Fi/Bluetooth接続</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="getting-started">
+                    <h3>mBot2をはじめよう</h3>
+                    <div class="steps-container">
+                        <div class="step-item">
+                            <div class="step-number">1</div>
+                            <div class="step-content">
+                                <h4>ロボットの組み立て</h4>
+                                <p>mBot2キットを組み立てて、各部品の動作を確認します</p>
+                            </div>
+                        </div>
+                        <div class="step-item">
+                            <div class="step-number">2</div>
+                            <div class="step-content">
+                                <h4>基本動作をプログラミング</h4>
+                                <p>前進・後退・旋回などの基本的な動きをプログラムします</p>
+                            </div>
+                        </div>
+                        <div class="step-item">
+                            <div class="step-number">3</div>
+                            <div class="step-content">
+                                <h4>センサーを使ってみよう</h4>
+                                <p>超音波センサーで距離を測ったり、光センサーで明るさを検知します</p>
+                            </div>
+                        </div>
+                        <div class="step-item">
+                            <div class="step-number">4</div>
+                            <div class="step-content">
+                                <h4>オリジナルロボットを作ろう</h4>
+                                <p>学んだ技術を組み合わせて、自分だけのロボットを完成させます</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="participation-cta">
+                    <h3>mBot2プログラミングに挑戦！</h3>
+                    <p>実物のロボットを動かす体験は、画面上のプログラミングとは一味違った楽しさがあります。<br>
+                    センサーとモーターを組み合わせて、思い通りに動くロボットを作ってみませんか？</p>
+                    <div class="cta-buttons">
+                        <a href="https://coderdojo-harumi.connpass.com/" class="btn btn-primary" target="_blank" rel="noopener noreferrer">参加申し込み</a>
+                        <a href="activities.html" class="btn btn-secondary">他の活動を見る</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-info">
+                    <h4>CoderDojo HARUMI</h4>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 CoderDojo HARUMI. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <style>
+        .page-hero {
+            background: linear-gradient(135deg, #00d4ff 0%, #0ea5e9 50%, #0284c7 100%);
+            color: white;
+            padding: 4rem 0;
+            text-align: center;
+            position: relative;
+        }
+
+        .page-hero::after {
+            content: '';
+            position: absolute;
+            bottom: -2px;
+            left: 0;
+            right: 0;
+            height: 60px;
+            background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1200 120' preserveAspectRatio='none'%3E%3Cpath d='M0,0V46.29c47.79,22.2,103.59,32.17,158,28,70.36-5.37,136.33-33.31,206.8-37.5C438.64,32.43,512.34,53.67,583,72.05c69.27,18,138.3,24.88,209.4,13.08,36.15-6,69.85-17.84,104.45-29.34C989.49,25,1113-14.29,1200,52.47V0Z' fill='%23ffffff' opacity='1'%3E%3C/path%3E%3C/svg%3E") no-repeat center bottom;
+            background-size: cover;
+        }
+
+        .page-hero h2 {
+            font-size: 3.2rem;
+            font-weight: 700;
+            margin-bottom: 1.5rem;
+            line-height: 1.1;
+            font-family: 'Inter', sans-serif;
+            letter-spacing: -0.03em;
+            color: #ffffff;
+            text-shadow: 
+                0 2px 4px rgba(0, 0, 0, 0.3),
+                0 4px 8px rgba(0, 0, 0, 0.2),
+                0 0 20px rgba(0, 0, 0, 0.1);
+        }
+
+        .page-hero p {
+            font-size: 1.25rem;
+            color: rgba(255, 255, 255, 0.95);
+            font-weight: 400;
+            line-height: 1.7;
+            font-family: 'Inter', sans-serif;
+            letter-spacing: -0.01em;
+            text-shadow: 
+                0 1px 2px rgba(0, 0, 0, 0.2),
+                0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .activity-detail {
+            background: white;
+            padding: 4rem 0;
+        }
+
+        .activity-detail h3 {
+            font-size: 2.5rem;
+            margin-bottom: 2rem;
+            color: #475569;
+            font-weight: 600;
+            font-family: 'Inter', sans-serif;
+            text-align: center;
+        }
+
+        .activity-overview {
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            gap: 3rem;
+            margin-bottom: 4rem;
+        }
+
+        .overview-content h3 {
+            text-align: left;
+            margin-bottom: 1.5rem;
+        }
+
+        .overview-content p {
+            color: #64748b;
+            line-height: 1.7;
+            font-size: 1.1rem;
+            margin-bottom: 2rem;
+        }
+
+        .activity-features {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 1.5rem;
+        }
+
+        .feature-item {
+            background: #f8f9fa;
+            padding: 1.5rem;
+            border-radius: 12px;
+            text-align: center;
+        }
+
+        .feature-item h4 {
+            color: #475569;
+            margin-bottom: 0.5rem;
+            font-weight: 600;
+        }
+
+        .feature-item p {
+            color: #64748b;
+            margin: 0;
+            font-size: 0.95rem;
+        }
+
+        .overview-image {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .image-placeholder {
+            background: linear-gradient(135deg, #e0f2fe 0%, #b3e5fc 100%);
+            border-radius: 16px;
+            padding: 2rem;
+            text-align: center;
+            border: 2px dashed #0284c7;
+            width: 100%;
+            min-height: 300px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .placeholder-content h4 {
+            color: #0369a1;
+            margin-bottom: 1rem;
+        }
+
+        .placeholder-content p {
+            color: #0284c7;
+            margin-bottom: 1.5rem;
+        }
+
+        .robot-features {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 0.5rem;
+        }
+
+        .robot-part {
+            background: rgba(3, 105, 161, 0.1);
+            padding: 0.5rem;
+            border-radius: 6px;
+            font-size: 0.9rem;
+            color: #0369a1;
+            font-weight: 500;
+        }
+
+        .learning-content {
+            margin-bottom: 4rem;
+        }
+
+        .learning-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+        }
+
+        .learning-card {
+            background: #f8f9fa;
+            padding: 2rem;
+            border-radius: 16px;
+            text-align: center;
+            border: 1px solid #e2e8f0;
+        }
+
+        .learning-icon {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .learning-card h4 {
+            color: #475569;
+            margin-bottom: 1rem;
+            font-weight: 600;
+        }
+
+        .learning-card p {
+            color: #64748b;
+            line-height: 1.6;
+            margin: 0;
+        }
+
+        .project-examples {
+            margin-bottom: 4rem;
+        }
+
+        .examples-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 2rem;
+        }
+
+        .example-card {
+            background: white;
+            border-radius: 16px;
+            overflow: hidden;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            border: 1px solid #e2e8f0;
+        }
+
+        .example-image {
+            height: 200px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .robot-avoid { background: linear-gradient(135deg, #f59e0b 0%, #d97706 100%); }
+        .robot-light { background: linear-gradient(135deg, #10b981 0%, #059669 100%); }
+        .robot-music { background: linear-gradient(135deg, #8b5cf6 0%, #7c3aed 100%); }
+
+        .example-placeholder {
+            text-align: center;
+            color: white;
+        }
+
+        .example-icon {
+            font-size: 3rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .example-placeholder h4 {
+            color: white;
+            margin: 0;
+        }
+
+        .example-content {
+            padding: 1.5rem;
+        }
+
+        .example-content h4 {
+            color: #475569;
+            margin-bottom: 1rem;
+            font-weight: 600;
+        }
+
+        .example-content p {
+            color: #64748b;
+            line-height: 1.6;
+            margin-bottom: 1rem;
+        }
+
+        .example-skills {
+            display: flex;
+            gap: 0.5rem;
+            flex-wrap: wrap;
+        }
+
+        .skill-tag {
+            background: #e0f2fe;
+            color: #0369a1;
+            padding: 0.25rem 0.75rem;
+            border-radius: 12px;
+            font-size: 0.8rem;
+            font-weight: 500;
+        }
+
+        .technical-specs {
+            margin-bottom: 4rem;
+        }
+
+        .specs-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+
+        .spec-category {
+            background: #f8f9fa;
+            padding: 2rem;
+            border-radius: 16px;
+            border: 1px solid #e2e8f0;
+        }
+
+        .spec-category h4 {
+            color: #475569;
+            margin-bottom: 1.5rem;
+            font-weight: 600;
+            font-size: 1.3rem;
+        }
+
+        .spec-category ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .spec-category li {
+            padding: 0.5rem 0;
+            color: #64748b;
+            border-bottom: 1px solid #e2e8f0;
+            font-weight: 500;
+        }
+
+        .spec-category li:last-child {
+            border-bottom: none;
+        }
+
+        .spec-category li::before {
+            content: '🔧';
+            margin-right: 0.5rem;
+        }
+
+        .getting-started {
+            margin-bottom: 4rem;
+        }
+
+        .steps-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+        }
+
+        .step-item {
+            display: flex;
+            gap: 1rem;
+            align-items: flex-start;
+        }
+
+        .step-number {
+            background: linear-gradient(135deg, #00d4ff, #0ea5e9);
+            color: white;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 600;
+            flex-shrink: 0;
+        }
+
+        .step-content h4 {
+            color: #475569;
+            margin-bottom: 0.5rem;
+            font-weight: 600;
+        }
+
+        .step-content p {
+            color: #64748b;
+            line-height: 1.6;
+            margin: 0;
+        }
+
+        .participation-cta {
+            background: #f8f9fa;
+            padding: 3rem;
+            border-radius: 16px;
+            text-align: center;
+        }
+
+        .participation-cta h3 {
+            color: #475569;
+            margin-bottom: 1.5rem;
+        }
+
+        .participation-cta p {
+            color: #64748b;
+            line-height: 1.7;
+            margin-bottom: 2rem;
+            font-size: 1.1rem;
+        }
+
+        .cta-buttons {
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        @media (max-width: 768px) {
+            .activity-overview {
+                grid-template-columns: 1fr;
+                gap: 2rem;
+            }
+            
+            .activity-features {
+                grid-template-columns: 1fr;
+            }
+            
+            .examples-grid,
+            .specs-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .steps-container {
+                grid-template-columns: 1fr;
+            }
+            
+            .cta-buttons {
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            .robot-features {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</body>
+</html>

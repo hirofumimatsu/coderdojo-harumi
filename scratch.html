@@ -1,0 +1,637 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scratch ゲーム・アニメーション - CoderDojo HARUMI</title>
+    <link rel="icon" type="image/png" href="log.png">
+    <link rel="shortcut icon" type="image/png" href="log.png">
+    <link rel="apple-touch-icon" href="log.png">
+    <link rel="stylesheet" href="styles/main.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Noto+Sans+JP:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <nav class="nav">
+            <div class="nav-brand">
+                <img src="log.png" alt="CoderDojo HARUMI" class="logo">
+                <h1>CoderDojo HARUMI</h1>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html">ホーム</a></li>
+                <li><a href="activities.html">活動内容</a></li>
+                <li><a href="join.html">参加方法</a></li>
+                <li><a href="blog.html">活動報告</a></li>
+                <li><a href="contact.html">お問い合わせ</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="main">
+        <section class="page-hero">
+            <div class="container">
+                <h2>Scratch ゲーム・アニメーション</h2>
+                <p>MIT開発のビジュアルプログラミングでゲームやアニメーションを作ろう！</p>
+            </div>
+        </section>
+
+        <section class="activity-detail">
+            <div class="container">
+                <div class="activity-overview">
+                    <div class="overview-content">
+                        <h3>活動の概要</h3>
+                        <p>Scratchは、MIT（マサチューセッツ工科大学）で開発されたビジュアルプログラミング言語です。ブロックをドラッグ&ドロップするだけで、プログラミングの基本概念を楽しく学ぶことができます。</p>
+                        
+                        <div class="activity-features">
+                            <div class="feature-item">
+                                <h4>🎯 対象年齢</h4>
+                                <p>7歳〜 (読み書きができれば誰でも)</p>
+                            </div>
+                            <div class="feature-item">
+                                <h4>⏱️ 所要時間</h4>
+                                <p>1作品あたり2〜3時間</p>
+                            </div>
+                            <div class="feature-item">
+                                <h4>📈 難易度</h4>
+                                <p>初心者〜中級者向け</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="overview-image">
+                        <div class="image-placeholder">
+                            <div class="placeholder-content">
+                                <h4>🎮 Scratch画面イメージ</h4>
+                                <p>カラフルなブロックでプログラムを組み立てます</p>
+                                <div class="scratch-blocks-demo">
+                                    <div class="block block-motion">10歩動かす</div>
+                                    <div class="block block-looks">こんにちは！と言う</div>
+                                    <div class="block block-sound">音を鳴らす</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="learning-content">
+                    <h3>学べること</h3>
+                    <div class="learning-grid">
+                        <div class="learning-card">
+                            <div class="learning-icon">🔄</div>
+                            <h4>繰り返し処理</h4>
+                            <p>同じ動作を何度も実行する「ループ」の概念を学びます</p>
+                        </div>
+                        <div class="learning-card">
+                            <div class="learning-icon">🌟</div>
+                            <h4>条件分岐</h4>
+                            <p>「もし〜なら」という条件によって動作を変える方法を理解します</p>
+                        </div>
+                        <div class="learning-card">
+                            <div class="learning-icon">📦</div>
+                            <h4>変数と計算</h4>
+                            <p>数値を記憶したり、計算したりするプログラミングの基本を学びます</p>
+                        </div>
+                        <div class="learning-card">
+                            <div class="learning-icon">🎨</div>
+                            <h4>創造性の発揮</h4>
+                            <p>自分だけのオリジナルキャラクターや背景を作成できます</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-examples">
+                    <h3>作品例</h3>
+                    <div class="examples-grid">
+                        <div class="example-card">
+                            <div class="example-image">
+                                <div class="example-placeholder">
+                                    <div class="example-icon">🚀</div>
+                                    <h4>シューティングゲーム</h4>
+                                </div>
+                            </div>
+                            <div class="example-content">
+                                <h4>宇宙シューティング</h4>
+                                <p>宇宙船を操縦して、隕石やエイリアンを倒すゲーム。キーボード操作、当たり判定、スコア機能などを学べます。</p>
+                                <div class="example-skills">
+                                    <span class="skill-tag">キー操作</span>
+                                    <span class="skill-tag">当たり判定</span>
+                                    <span class="skill-tag">変数</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="example-card">
+                            <div class="example-image">
+                                <div class="example-placeholder">
+                                    <div class="example-icon">🐱</div>
+                                    <h4>アニメーション</h4>
+                                </div>
+                            </div>
+                            <div class="example-content">
+                                <h4>物語アニメーション</h4>
+                                <p>キャラクターが動き回る短い物語を作成。セリフ、音楽、場面転換などでストーリーテリングを学びます。</p>
+                                <div class="example-skills">
+                                    <span class="skill-tag">アニメーション</span>
+                                    <span class="skill-tag">音楽</span>
+                                    <span class="skill-tag">ストーリー</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="example-card">
+                            <div class="example-image">
+                                <div class="example-placeholder">
+                                    <div class="example-icon">🎯</div>
+                                    <h4>パズルゲーム</h4>
+                                </div>
+                            </div>
+                            <div class="example-content">
+                                <h4>迷路ゲーム</h4>
+                                <p>プレイヤーが迷路を抜けるゲーム。障害物の検出、ゴール判定、タイマー機能などを実装します。</p>
+                                <div class="example-skills">
+                                    <span class="skill-tag">座標</span>
+                                    <span class="skill-tag">条件分岐</span>
+                                    <span class="skill-tag">タイマー</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="getting-started">
+                    <h3>はじめてのScratch</h3>
+                    <div class="steps-container">
+                        <div class="step-item">
+                            <div class="step-number">1</div>
+                            <div class="step-content">
+                                <h4>Scratchを開こう</h4>
+                                <p>ブラウザでScratchのサイトにアクセスするか、iPadアプリを使います</p>
+                            </div>
+                        </div>
+                        <div class="step-item">
+                            <div class="step-number">2</div>
+                            <div class="step-content">
+                                <h4>キャラクターを動かそう</h4>
+                                <p>「10歩動かす」ブロックを使って、猫のキャラクターを歩かせてみます</p>
+                            </div>
+                        </div>
+                        <div class="step-item">
+                            <div class="step-number">3</div>
+                            <div class="step-content">
+                                <h4>音を鳴らそう</h4>
+                                <p>「音を鳴らす」ブロックで、キャラクターにセリフや効果音をつけます</p>
+                            </div>
+                        </div>
+                        <div class="step-item">
+                            <div class="step-number">4</div>
+                            <div class="step-content">
+                                <h4>作品を完成させよう</h4>
+                                <p>アイデアを形にして、家族や友達に見せられる作品を作ります</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="participation-cta">
+                    <h3>Scratch活動に参加しよう！</h3>
+                    <p>初心者でも大丈夫！メンターが一人ひとりのペースに合わせてサポートします。<br>
+                    まずは見学から始めませんか？</p>
+                    <div class="cta-buttons">
+                        <a href="https://coderdojo-harumi.connpass.com/" class="btn btn-primary" target="_blank" rel="noopener noreferrer">参加申し込み</a>
+                        <a href="activities.html" class="btn btn-secondary">他の活動を見る</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-info">
+                    <h4>CoderDojo HARUMI</h4>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 CoderDojo HARUMI. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <style>
+        .page-hero {
+            background: linear-gradient(135deg, #00d4ff 0%, #0ea5e9 50%, #0284c7 100%);
+            color: white;
+            padding: 4rem 0;
+            text-align: center;
+            position: relative;
+        }
+
+        .page-hero::after {
+            content: '';
+            position: absolute;
+            bottom: -2px;
+            left: 0;
+            right: 0;
+            height: 60px;
+            background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1200 120' preserveAspectRatio='none'%3E%3Cpath d='M0,0V46.29c47.79,22.2,103.59,32.17,158,28,70.36-5.37,136.33-33.31,206.8-37.5C438.64,32.43,512.34,53.67,583,72.05c69.27,18,138.3,24.88,209.4,13.08,36.15-6,69.85-17.84,104.45-29.34C989.49,25,1113-14.29,1200,52.47V0Z' fill='%23ffffff' opacity='1'%3E%3C/path%3E%3C/svg%3E") no-repeat center bottom;
+            background-size: cover;
+        }
+
+        .page-hero h2 {
+            font-size: 3.2rem;
+            font-weight: 700;
+            margin-bottom: 1.5rem;
+            line-height: 1.1;
+            font-family: 'Inter', sans-serif;
+            letter-spacing: -0.03em;
+            color: #ffffff;
+            text-shadow: 
+                0 2px 4px rgba(0, 0, 0, 0.3),
+                0 4px 8px rgba(0, 0, 0, 0.2),
+                0 0 20px rgba(0, 0, 0, 0.1);
+        }
+
+        .page-hero p {
+            font-size: 1.25rem;
+            color: rgba(255, 255, 255, 0.95);
+            font-weight: 400;
+            line-height: 1.7;
+            font-family: 'Inter', sans-serif;
+            letter-spacing: -0.01em;
+            text-shadow: 
+                0 1px 2px rgba(0, 0, 0, 0.2),
+                0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .activity-detail {
+            background: white;
+            padding: 4rem 0;
+        }
+
+        .activity-detail h3 {
+            font-size: 2.5rem;
+            margin-bottom: 2rem;
+            color: #475569;
+            font-weight: 600;
+            font-family: 'Inter', sans-serif;
+            text-align: center;
+        }
+
+        .activity-overview {
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            gap: 3rem;
+            margin-bottom: 4rem;
+        }
+
+        .overview-content h3 {
+            text-align: left;
+            margin-bottom: 1.5rem;
+        }
+
+        .overview-content p {
+            color: #64748b;
+            line-height: 1.7;
+            font-size: 1.1rem;
+            margin-bottom: 2rem;
+        }
+
+        .activity-features {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 1.5rem;
+        }
+
+        .feature-item {
+            background: rgba(255, 255, 255, 0.8);
+            backdrop-filter: blur(20px);
+            padding: 2rem;
+            border-radius: 20px;
+            text-align: center;
+            border: 1px solid rgba(0, 212, 255, 0.1);
+            box-shadow: 
+                0 8px 25px rgba(0, 0, 0, 0.08),
+                0 3px 10px rgba(0, 0, 0, 0.05);
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        .feature-item:hover {
+            transform: translateY(-5px);
+            box-shadow: 
+                0 20px 40px rgba(0, 0, 0, 0.12),
+                0 8px 16px rgba(0, 0, 0, 0.08);
+            border-color: rgba(0, 212, 255, 0.2);
+        }
+
+        .feature-item h4 {
+            color: #475569;
+            margin-bottom: 0.5rem;
+            font-weight: 600;
+        }
+
+        .feature-item p {
+            color: #64748b;
+            margin: 0;
+            font-size: 0.95rem;
+        }
+
+        .overview-image {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .image-placeholder {
+            background: linear-gradient(135deg, rgba(76, 151, 255, 0.1) 0%, rgba(153, 102, 255, 0.1) 100%);
+            backdrop-filter: blur(10px);
+            border-radius: 24px;
+            padding: 3rem;
+            text-align: center;
+            border: 2px solid rgba(76, 151, 255, 0.2);
+            width: 100%;
+            min-height: 350px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            box-shadow: 
+                0 8px 25px rgba(76, 151, 255, 0.1),
+                0 3px 10px rgba(0, 0, 0, 0.05);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .image-placeholder::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: conic-gradient(from 0deg, transparent, rgba(76, 151, 255, 0.1), transparent);
+            animation: rotate 8s linear infinite;
+        }
+
+        @keyframes rotate {
+            from { transform: rotate(0deg); }
+            to { transform: rotate(360deg); }
+        }
+
+        .placeholder-content h4 {
+            color: #475569;
+            margin-bottom: 1rem;
+        }
+
+        .placeholder-content p {
+            color: #64748b;
+            margin-bottom: 1.5rem;
+        }
+
+        .scratch-blocks-demo {
+            display: flex;
+            flex-direction: column;
+            gap: 0.5rem;
+        }
+
+        .block {
+            padding: 0.5rem 1rem;
+            border-radius: 8px;
+            color: white;
+            font-weight: 500;
+            font-size: 0.9rem;
+        }
+
+        .block-motion { background: #4c97ff; }
+        .block-looks { background: #9966ff; }
+        .block-sound { background: #cf63cf; }
+
+        .learning-content {
+            margin-bottom: 4rem;
+        }
+
+        .learning-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+        }
+
+        .learning-card {
+            background: rgba(255, 255, 255, 0.7);
+            backdrop-filter: blur(15px);
+            padding: 2.5rem;
+            border-radius: 24px;
+            text-align: center;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            box-shadow: 
+                0 12px 28px rgba(0, 0, 0, 0.06),
+                0 4px 12px rgba(0, 0, 0, 0.04);
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .learning-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 3px;
+            background: linear-gradient(90deg, #4c97ff, #9966ff, #cf63cf);
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+
+        .learning-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 
+                0 20px 45px rgba(0, 0, 0, 0.1),
+                0 8px 20px rgba(0, 0, 0, 0.06);
+        }
+
+        .learning-card:hover::before {
+            opacity: 1;
+        }
+
+        .learning-icon {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .learning-card h4 {
+            color: #475569;
+            margin-bottom: 1rem;
+            font-weight: 600;
+        }
+
+        .learning-card p {
+            color: #64748b;
+            line-height: 1.6;
+            margin: 0;
+        }
+
+        .project-examples {
+            margin-bottom: 4rem;
+        }
+
+        .examples-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 2rem;
+        }
+
+        .example-card {
+            background: white;
+            border-radius: 16px;
+            overflow: hidden;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            border: 1px solid #e2e8f0;
+        }
+
+        .example-image {
+            height: 200px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .example-placeholder {
+            text-align: center;
+            color: white;
+        }
+
+        .example-icon {
+            font-size: 3rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .example-placeholder h4 {
+            color: white;
+            margin: 0;
+        }
+
+        .example-content {
+            padding: 1.5rem;
+        }
+
+        .example-content h4 {
+            color: #475569;
+            margin-bottom: 1rem;
+            font-weight: 600;
+        }
+
+        .example-content p {
+            color: #64748b;
+            line-height: 1.6;
+            margin-bottom: 1rem;
+        }
+
+        .example-skills {
+            display: flex;
+            gap: 0.5rem;
+            flex-wrap: wrap;
+        }
+
+        .skill-tag {
+            background: #e0f2fe;
+            color: #0369a1;
+            padding: 0.25rem 0.75rem;
+            border-radius: 12px;
+            font-size: 0.8rem;
+            font-weight: 500;
+        }
+
+        .getting-started {
+            margin-bottom: 4rem;
+        }
+
+        .steps-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+        }
+
+        .step-item {
+            display: flex;
+            gap: 1rem;
+            align-items: flex-start;
+        }
+
+        .step-number {
+            background: linear-gradient(135deg, #00d4ff, #0ea5e9);
+            color: white;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 600;
+            flex-shrink: 0;
+        }
+
+        .step-content h4 {
+            color: #475569;
+            margin-bottom: 0.5rem;
+            font-weight: 600;
+        }
+
+        .step-content p {
+            color: #64748b;
+            line-height: 1.6;
+            margin: 0;
+        }
+
+        .participation-cta {
+            background: #f8f9fa;
+            padding: 3rem;
+            border-radius: 16px;
+            text-align: center;
+        }
+
+        .participation-cta h3 {
+            color: #475569;
+            margin-bottom: 1.5rem;
+        }
+
+        .participation-cta p {
+            color: #64748b;
+            line-height: 1.7;
+            margin-bottom: 2rem;
+            font-size: 1.1rem;
+        }
+
+        .cta-buttons {
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        @media (max-width: 768px) {
+            .activity-overview {
+                grid-template-columns: 1fr;
+                gap: 2rem;
+            }
+            
+            .activity-features {
+                grid-template-columns: 1fr;
+            }
+            
+            .examples-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .steps-container {
+                grid-template-columns: 1fr;
+            }
+            
+            .cta-buttons {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+    </style>
+</body>
+</html>

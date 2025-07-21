@@ -1,0 +1,695 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>embot ダンボールロボット - CoderDojo HARUMI</title>
+    <link rel="icon" type="image/png" href="log.png">
+    <link rel="shortcut icon" type="image/png" href="log.png">
+    <link rel="apple-touch-icon" href="log.png">
+    <link rel="stylesheet" href="styles/main.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Noto+Sans+JP:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <nav class="nav">
+            <div class="nav-brand">
+                <img src="log.png" alt="CoderDojo HARUMI" class="logo">
+                <h1>CoderDojo HARUMI</h1>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html">ホーム</a></li>
+                <li><a href="activities.html">活動内容</a></li>
+                <li><a href="join.html">参加方法</a></li>
+                <li><a href="blog.html">活動報告</a></li>
+                <li><a href="contact.html">お問い合わせ</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="main">
+        <section class="page-hero">
+            <div class="container">
+                <h2>embot ダンボールロボット</h2>
+                <p>ダンボールとプログラミングで、オリジナルロボットを作ろう！</p>
+            </div>
+        </section>
+
+        <section class="activity-detail">
+            <div class="container">
+                <div class="activity-overview">
+                    <div class="overview-content">
+                        <h3>embotについて</h3>
+                        <p>embotは、ダンボールでできたロボット工作キットです。ダンボールを切って組み立て、小さなコンピューター「embotコア」にプログラムを書き込むことで、自分だけのオリジナルロボットが完成します。工作とプログラミングの両方を楽しめる教材です。</p>
+                        
+                        <div class="activity-features">
+                            <div class="feature-item">
+                                <h4>🎯 対象年齢</h4>
+                                <p>7歳〜 (工作が好きな子におすすめ)</p>
+                            </div>
+                            <div class="feature-item">
+                                <h4>⏱️ 所要時間</h4>
+                                <p>組み立て1時間 + プログラミング1時間</p>
+                            </div>
+                            <div class="feature-item">
+                                <h4>📈 難易度</h4>
+                                <p>初心者向け</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="overview-image">
+                        <div class="image-placeholder embot-style">
+                            <div class="placeholder-content">
+                                <h4>📦 embotキット</h4>
+                                <p>ダンボールパーツと電子部品のセット</p>
+                                <div class="embot-parts">
+                                    <div class="embot-part">📱 embotコア</div>
+                                    <div class="embot-part">📦 ダンボールパーツ</div>
+                                    <div class="embot-part">⚡ サーボモーター</div>
+                                    <div class="embot-part">💡 LED</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="learning-content">
+                    <h3>embotで学べること</h3>
+                    <div class="learning-grid">
+                        <div class="learning-card">
+                            <div class="learning-icon">✂️</div>
+                            <h4>工作スキル</h4>
+                            <p>ダンボールを切る、折る、組み立てる工作の基本技術を身につけます</p>
+                        </div>
+                        <div class="learning-card">
+                            <div class="learning-icon">🎨</div>
+                            <h4>デザイン思考</h4>
+                            <p>どんな動きをするロボットにするか、外見をどうするかを自分で考えます</p>
+                        </div>
+                        <div class="learning-card">
+                            <div class="learning-icon">🔧</div>
+                            <h4>ものづくり</h4>
+                            <p>アイデアを実際の「もの」として形にする喜びを体験できます</p>
+                        </div>
+                        <div class="learning-card">
+                            <div class="learning-icon">📱</div>
+                            <h4>デバイス制御</h4>
+                            <p>スマートフォンやタブレットからロボットを操作する方法を学びます</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-examples">
+                    <h3>作品例</h3>
+                    <div class="examples-grid">
+                        <div class="example-card">
+                            <div class="example-image embot-dance">
+                                <div class="example-placeholder">
+                                    <div class="example-icon">💃</div>
+                                    <h4>ダンシングロボット</h4>
+                                </div>
+                            </div>
+                            <div class="example-content">
+                                <h4>音楽に合わせて踊るロボット</h4>
+                                <p>サーボモーターを使って腕や体を動かし、音楽に合わせてダンスするロボットを作ります。LEDで光の演出も追加できます。</p>
+                                <div class="example-skills">
+                                    <span class="skill-tag">サーボモーター</span>
+                                    <span class="skill-tag">音楽制御</span>
+                                    <span class="skill-tag">LED演出</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="example-card">
+                            <div class="example-image embot-pet">
+                                <div class="example-placeholder">
+                                    <div class="example-icon">🐕</div>
+                                    <h4>ペットロボット</h4>
+                                </div>
+                            </div>
+                            <div class="example-content">
+                                <h4>反応するペットロボット</h4>
+                                <p>スマートフォンのボタンに反応して、しっぽを振ったり、鳴き声を出したりするペット型ロボットを製作します。</p>
+                                <div class="example-skills">
+                                    <span class="skill-tag">リモート操作</span>
+                                    <span class="skill-tag">音声出力</span>
+                                    <span class="skill-tag">動物デザイン</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="example-card">
+                            <div class="example-image embot-alarm">
+                                <div class="example-placeholder">
+                                    <div class="example-icon">⏰</div>
+                                    <h4>お知らせロボット</h4>
+                                </div>
+                            </div>
+                            <div class="example-content">
+                                <h4>時間をお知らせするロボット</h4>
+                                <p>決まった時間になると動いてお知らせしてくれるロボット。勉強時間や休憩時間を楽しく管理できます。</p>
+                                <div class="example-skills">
+                                    <span class="skill-tag">タイマー機能</span>
+                                    <span class="skill-tag">アラーム制御</span>
+                                    <span class="skill-tag">生活サポート</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="making-process">
+                    <h3>embotの作り方</h3>
+                    <div class="process-steps">
+                        <div class="process-step">
+                            <div class="process-image">
+                                <div class="process-placeholder design">
+                                    <div class="process-icon">✏️</div>
+                                    <span>デザイン</span>
+                                </div>
+                            </div>
+                            <div class="process-content">
+                                <h4>1. ロボットをデザイン</h4>
+                                <p>どんなロボットを作るか考えて、ダンボールに下絵を描きます。動物や乗り物など、好きな形を自由にデザインできます。</p>
+                            </div>
+                        </div>
+                        
+                        <div class="process-step">
+                            <div class="process-image">
+                                <div class="process-placeholder craft">
+                                    <div class="process-icon">✂️</div>
+                                    <span>工作</span>
+                                </div>
+                            </div>
+                            <div class="process-content">
+                                <h4>2. ダンボールを切って組み立て</h4>
+                                <p>はさみやカッターでダンボールを切り、折り曲げて立体的なロボットの形を作ります。色を塗ったりシールを貼ったりして飾り付けも行います。</p>
+                            </div>
+                        </div>
+                        
+                        <div class="process-step">
+                            <div class="process-image">
+                                <div class="process-placeholder electronics">
+                                    <div class="process-icon">🔌</div>
+                                    <span>電子工作</span>
+                                </div>
+                            </div>
+                            <div class="process-content">
+                                <h4>3. embotコアを取り付け</h4>
+                                <p>小さなコンピューター「embotコア」をダンボールに取り付け、モーターやLEDなどのパーツも配線します。</p>
+                            </div>
+                        </div>
+                        
+                        <div class="process-step">
+                            <div class="process-image">
+                                <div class="process-placeholder programming">
+                                    <div class="process-icon">📱</div>
+                                    <span>プログラミング</span>
+                                </div>
+                            </div>
+                            <div class="process-content">
+                                <h4>4. プログラムを作成</h4>
+                                <p>スマートフォンやタブレットのアプリでプログラムを作り、embotコアに送信してロボットを動かします。</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="getting-started">
+                    <h3>embotをはじめよう</h3>
+                    <div class="steps-container">
+                        <div class="step-item">
+                            <div class="step-number">1</div>
+                            <div class="step-content">
+                                <h4>アイデアを考える</h4>
+                                <p>どんなロボットを作りたいか、どんな動きをさせたいかを考えます</p>
+                            </div>
+                        </div>
+                        <div class="step-item">
+                            <div class="step-number">2</div>
+                            <div class="step-content">
+                                <h4>ダンボール工作</h4>
+                                <p>ダンボールを切って組み立て、ロボットの外見を作ります</p>
+                            </div>
+                        </div>
+                        <div class="step-item">
+                            <div class="step-number">3</div>
+                            <div class="step-content">
+                                <h4>電子パーツの取り付け</h4>
+                                <p>embotコアとモーター、LEDなどを取り付けます</p>
+                            </div>
+                        </div>
+                        <div class="step-item">
+                            <div class="step-number">4</div>
+                            <div class="step-content">
+                                <h4>プログラミング</h4>
+                                <p>アプリでプログラムを作って、ロボットを思い通りに動かします</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="participation-cta">
+                    <h3>embotでオリジナルロボットを作ろう！</h3>
+                    <p>工作とプログラミングを同時に楽しめるembotは、創造力を育むのにぴったりです。<br>
+                    自分だけのロボットを作って、友達に自慢してみませんか？</p>
+                    <div class="cta-buttons">
+                        <a href="https://coderdojo-harumi.connpass.com/" class="btn btn-primary" target="_blank" rel="noopener noreferrer">参加申し込み</a>
+                        <a href="activities.html" class="btn btn-secondary">他の活動を見る</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-info">
+                    <h4>CoderDojo HARUMI</h4>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 CoderDojo HARUMI. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <style>
+        .page-hero {
+            background: linear-gradient(135deg, #00d4ff 0%, #0ea5e9 50%, #0284c7 100%);
+            color: white;
+            padding: 4rem 0;
+            text-align: center;
+            position: relative;
+        }
+
+        .page-hero::after {
+            content: '';
+            position: absolute;
+            bottom: -2px;
+            left: 0;
+            right: 0;
+            height: 60px;
+            background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1200 120' preserveAspectRatio='none'%3E%3Cpath d='M0,0V46.29c47.79,22.2,103.59,32.17,158,28,70.36-5.37,136.33-33.31,206.8-37.5C438.64,32.43,512.34,53.67,583,72.05c69.27,18,138.3,24.88,209.4,13.08,36.15-6,69.85-17.84,104.45-29.34C989.49,25,1113-14.29,1200,52.47V0Z' fill='%23ffffff' opacity='1'%3E%3C/path%3E%3C/svg%3E") no-repeat center bottom;
+            background-size: cover;
+        }
+
+        .page-hero h2 {
+            font-size: 3.2rem;
+            font-weight: 700;
+            margin-bottom: 1.5rem;
+            line-height: 1.1;
+            font-family: 'Inter', sans-serif;
+            letter-spacing: -0.03em;
+            color: #ffffff;
+            text-shadow: 
+                0 2px 4px rgba(0, 0, 0, 0.3),
+                0 4px 8px rgba(0, 0, 0, 0.2),
+                0 0 20px rgba(0, 0, 0, 0.1);
+        }
+
+        .page-hero p {
+            font-size: 1.25rem;
+            color: rgba(255, 255, 255, 0.95);
+            font-weight: 400;
+            line-height: 1.7;
+            font-family: 'Inter', sans-serif;
+            letter-spacing: -0.01em;
+            text-shadow: 
+                0 1px 2px rgba(0, 0, 0, 0.2),
+                0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .activity-detail {
+            background: white;
+            padding: 4rem 0;
+        }
+
+        .activity-detail h3 {
+            font-size: 2.5rem;
+            margin-bottom: 2rem;
+            color: #475569;
+            font-weight: 600;
+            font-family: 'Inter', sans-serif;
+            text-align: center;
+        }
+
+        .activity-overview {
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            gap: 3rem;
+            margin-bottom: 4rem;
+        }
+
+        .overview-content h3 {
+            text-align: left;
+            margin-bottom: 1.5rem;
+        }
+
+        .overview-content p {
+            color: #64748b;
+            line-height: 1.7;
+            font-size: 1.1rem;
+            margin-bottom: 2rem;
+        }
+
+        .activity-features {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 1.5rem;
+        }
+
+        .feature-item {
+            background: #f8f9fa;
+            padding: 1.5rem;
+            border-radius: 12px;
+            text-align: center;
+        }
+
+        .feature-item h4 {
+            color: #475569;
+            margin-bottom: 0.5rem;
+            font-weight: 600;
+        }
+
+        .feature-item p {
+            color: #64748b;
+            margin: 0;
+            font-size: 0.95rem;
+        }
+
+        .overview-image {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .image-placeholder.embot-style {
+            background: linear-gradient(135deg, #fef3c7 0%, #fcd34d 100%);
+            border: 2px dashed #d97706;
+        }
+
+        .image-placeholder {
+            border-radius: 16px;
+            padding: 2rem;
+            text-align: center;
+            width: 100%;
+            min-height: 300px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .embot-style .placeholder-content h4 {
+            color: #92400e;
+            margin-bottom: 1rem;
+        }
+
+        .embot-style .placeholder-content p {
+            color: #d97706;
+            margin-bottom: 1.5rem;
+        }
+
+        .embot-parts {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 0.5rem;
+        }
+
+        .embot-part {
+            background: rgba(146, 64, 14, 0.1);
+            padding: 0.5rem;
+            border-radius: 6px;
+            font-size: 0.9rem;
+            color: #92400e;
+            font-weight: 500;
+        }
+
+        .learning-content {
+            margin-bottom: 4rem;
+        }
+
+        .learning-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+        }
+
+        .learning-card {
+            background: #f8f9fa;
+            padding: 2rem;
+            border-radius: 16px;
+            text-align: center;
+            border: 1px solid #e2e8f0;
+        }
+
+        .learning-icon {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .learning-card h4 {
+            color: #475569;
+            margin-bottom: 1rem;
+            font-weight: 600;
+        }
+
+        .learning-card p {
+            color: #64748b;
+            line-height: 1.6;
+            margin: 0;
+        }
+
+        .project-examples {
+            margin-bottom: 4rem;
+        }
+
+        .examples-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 2rem;
+        }
+
+        .example-card {
+            background: white;
+            border-radius: 16px;
+            overflow: hidden;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            border: 1px solid #e2e8f0;
+        }
+
+        .example-image {
+            height: 200px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .embot-dance { background: linear-gradient(135deg, #ec4899 0%, #db2777 100%); }
+        .embot-pet { background: linear-gradient(135deg, #f59e0b 0%, #d97706 100%); }
+        .embot-alarm { background: linear-gradient(135deg, #06b6d4 0%, #0891b2 100%); }
+
+        .example-placeholder {
+            text-align: center;
+            color: white;
+        }
+
+        .example-icon {
+            font-size: 3rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .example-placeholder h4 {
+            color: white;
+            margin: 0;
+        }
+
+        .example-content {
+            padding: 1.5rem;
+        }
+
+        .example-content h4 {
+            color: #475569;
+            margin-bottom: 1rem;
+            font-weight: 600;
+        }
+
+        .example-content p {
+            color: #64748b;
+            line-height: 1.6;
+            margin-bottom: 1rem;
+        }
+
+        .example-skills {
+            display: flex;
+            gap: 0.5rem;
+            flex-wrap: wrap;
+        }
+
+        .skill-tag {
+            background: #fef3c7;
+            color: #92400e;
+            padding: 0.25rem 0.75rem;
+            border-radius: 12px;
+            font-size: 0.8rem;
+            font-weight: 500;
+        }
+
+        .making-process {
+            margin-bottom: 4rem;
+        }
+
+        .process-steps {
+            display: grid;
+            gap: 3rem;
+        }
+
+        .process-step {
+            display: grid;
+            grid-template-columns: 200px 1fr;
+            gap: 2rem;
+            align-items: center;
+        }
+
+        .process-image {
+            aspect-ratio: 1;
+            border-radius: 12px;
+            overflow: hidden;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .process-placeholder {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-weight: 600;
+        }
+
+        .design { background: linear-gradient(135deg, #8b5cf6 0%, #7c3aed 100%); }
+        .craft { background: linear-gradient(135deg, #f59e0b 0%, #d97706 100%); }
+        .electronics { background: linear-gradient(135deg, #10b981 0%, #059669 100%); }
+        .programming { background: linear-gradient(135deg, #3b82f6 0%, #2563eb 100%); }
+
+        .process-icon {
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .process-content h4 {
+            color: #475569;
+            margin-bottom: 1rem;
+            font-weight: 600;
+        }
+
+        .process-content p {
+            color: #64748b;
+            line-height: 1.6;
+            margin: 0;
+        }
+
+        .getting-started {
+            margin-bottom: 4rem;
+        }
+
+        .steps-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+        }
+
+        .step-item {
+            display: flex;
+            gap: 1rem;
+            align-items: flex-start;
+        }
+
+        .step-number {
+            background: linear-gradient(135deg, #00d4ff, #0ea5e9);
+            color: white;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 600;
+            flex-shrink: 0;
+        }
+
+        .step-content h4 {
+            color: #475569;
+            margin-bottom: 0.5rem;
+            font-weight: 600;
+        }
+
+        .step-content p {
+            color: #64748b;
+            line-height: 1.6;
+            margin: 0;
+        }
+
+        .participation-cta {
+            background: #f8f9fa;
+            padding: 3rem;
+            border-radius: 16px;
+            text-align: center;
+        }
+
+        .participation-cta h3 {
+            color: #475569;
+            margin-bottom: 1.5rem;
+        }
+
+        .participation-cta p {
+            color: #64748b;
+            line-height: 1.7;
+            margin-bottom: 2rem;
+            font-size: 1.1rem;
+        }
+
+        .cta-buttons {
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        @media (max-width: 768px) {
+            .activity-overview,
+            .process-step {
+                grid-template-columns: 1fr;
+                gap: 2rem;
+            }
+            
+            .activity-features {
+                grid-template-columns: 1fr;
+            }
+            
+            .examples-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .steps-container {
+                grid-template-columns: 1fr;
+            }
+            
+            .cta-buttons {
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            .embot-parts {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</body>
+</html>

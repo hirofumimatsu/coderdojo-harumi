@@ -4,13 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>活動報告 - CoderDojo HARUMI</title>
+    <link rel="icon" type="image/png" href="log.png">
+    <link rel="shortcut icon" type="image/png" href="log.png">
+    <link rel="apple-touch-icon" href="log.png">
     <link rel="stylesheet" href="styles/main.css">
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Noto+Sans+JP:wght@300;400;700&display=swap" rel="stylesheet">
 </head>
 <body>
     <header class="header">
         <nav class="nav">
             <div class="nav-brand">
+                <img src="log.png" alt="CoderDojo HARUMI" class="logo">
                 <h1>CoderDojo HARUMI</h1>
             </div>
             <ul class="nav-menu">
@@ -78,16 +82,6 @@
             <div class="footer-content">
                 <div class="footer-info">
                     <h4>CoderDojo HARUMI</h4>
-                    <p>子供たちの可能性を広げるプログラミングクラブ</p>
-                </div>
-                <div class="footer-links">
-                    <ul>
-                        <li><a href="index.html">ホーム</a></li>
-                        <li><a href="activities.html">活動内容</a></li>
-                        <li><a href="join.html">参加方法</a></li>
-                        <li><a href="blog.html">活動報告</a></li>
-                        <li><a href="contact.html">お問い合わせ</a></li>
-                    </ul>
                 </div>
             </div>
             <div class="footer-bottom">
@@ -98,10 +92,48 @@
 
     <style>
         .page-hero {
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            background: linear-gradient(135deg, #00d4ff 0%, #0ea5e9 50%, #0284c7 100%);
             color: white;
             padding: 4rem 0;
             text-align: center;
+            position: relative;
+        }
+
+        .page-hero::after {
+            content: '';
+            position: absolute;
+            bottom: -2px;
+            left: 0;
+            right: 0;
+            height: 60px;
+            background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1200 120' preserveAspectRatio='none'%3E%3Cpath d='M0,0V46.29c47.79,22.2,103.59,32.17,158,28,70.36-5.37,136.33-33.31,206.8-37.5C438.64,32.43,512.34,53.67,583,72.05c69.27,18,138.3,24.88,209.4,13.08,36.15-6,69.85-17.84,104.45-29.34C989.49,25,1113-14.29,1200,52.47V0Z' fill='%23ffffff' opacity='1'%3E%3C/path%3E%3C/svg%3E") no-repeat center bottom;
+            background-size: cover;
+        }
+
+        .page-hero h2 {
+            font-size: 3.5rem;
+            font-weight: 800;
+            margin-bottom: 1.5rem;
+            line-height: 1.1;
+            font-family: 'Inter', sans-serif;
+            letter-spacing: -0.03em;
+            color: #ffffff;
+            text-shadow: 
+                0 2px 4px rgba(0, 0, 0, 0.3),
+                0 4px 8px rgba(0, 0, 0, 0.2),
+                0 0 20px rgba(0, 0, 0, 0.1);
+        }
+
+        .page-hero p {
+            font-size: 1.25rem;
+            color: rgba(255, 255, 255, 0.95);
+            font-weight: 400;
+            line-height: 1.7;
+            font-family: 'Inter', sans-serif;
+            letter-spacing: -0.01em;
+            text-shadow: 
+                0 1px 2px rgba(0, 0, 0, 0.2),
+                0 2px 4px rgba(0, 0, 0, 0.1);
         }
 
         .blog-main {

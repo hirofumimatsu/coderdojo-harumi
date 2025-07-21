@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>クリエイティブプログラミング - CoderDojo HARUMI</title>
+    <link rel="icon" type="image/png" href="log.png">
+    <link rel="shortcut icon" type="image/png" href="log.png">
+    <link rel="apple-touch-icon" href="log.png">
+    <link rel="stylesheet" href="styles/main.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Noto+Sans+JP:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <nav class="nav">
+            <div class="nav-brand">
+                <img src="log.png" alt="CoderDojo HARUMI" class="logo">
+                <h1>CoderDojo HARUMI</h1>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html">ホーム</a></li>
+                <li><a href="activities.html">活動内容</a></li>
+                <li><a href="join.html">参加方法</a></li>
+                <li><a href="blog.html">活動報告</a></li>
+                <li><a href="contact.html">お問い合わせ</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="main">
+        <section class="page-hero">
+            <div class="container">
+                <div class="coming-soon-badge">🚧 準備中 🚧</div>
+                <h2>クリエイティブプログラミング</h2>
+                <p>コードで芸術を生み出そう！</p>
+                <div class="preparation-notice">
+                    <p>現在コンテンツを準備中です。近日公開予定！</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="coming-soon-content">
+            <div class="container">
+                <div class="preview-card">
+                    <div class="preview-icon">🎨</div>
+                    <h3>クリエイティブプログラミングで学べること（予定）</h3>
+                    <div class="preview-features">
+                        <div class="preview-item">
+                            <span class="feature-icon">🖼️</span>
+                            <span>ジェネラティブアート</span>
+                        </div>
+                        <div class="preview-item">
+                            <span class="feature-icon">🎵</span>
+                            <span>アルゴリズム音楽</span>
+                        </div>
+                        <div class="preview-item">
+                            <span class="feature-icon">✨</span>
+                            <span>インタラクティブ作品</span>
+                        </div>
+                        <div class="preview-item">
+                            <span class="feature-icon">🌈</span>
+                            <span>データビジュアライゼーション</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="notify-section">
+                    <h3>公開をお待ちください</h3>
+                    <p>クリエイティブプログラミングのコンテンツを現在準備中です。<br>
+                    公開までしばらくお待ちください。</p>
+                    <div class="notify-buttons">
+                        <a href="activities.html" class="btn btn-primary">他の活動を見る</a>
+                        <a href="https://coderdojo-harumi.connpass.com/" class="btn btn-secondary" target="_blank" rel="noopener noreferrer">参加申し込み</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-info">
+                    <h4>CoderDojo HARUMI</h4>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 CoderDojo HARUMI. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <style>
+        .page-hero {
+            background: linear-gradient(135deg, #f59e0b 0%, #ef4444 50%, #8b5cf6 100%);
+            color: white;
+            padding: 6rem 0;
+            text-align: center;
+            position: relative;
+        }
+
+        .page-hero::after {
+            content: '';
+            position: absolute;
+            bottom: -2px;
+            left: 0;
+            right: 0;
+            height: 60px;
+            background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1200 120' preserveAspectRatio='none'%3E%3Cpath d='M0,0V46.29c47.79,22.2,103.59,32.17,158,28,70.36-5.37,136.33-33.31,206.8-37.5C438.64,32.43,512.34,53.67,583,72.05c69.27,18,138.3,24.88,209.4,13.08,36.15-6,69.85-17.84,104.45-29.34C989.49,25,1113-14.29,1200,52.47V0Z' fill='%23ffffff' opacity='1'%3E%3C/path%3E%3C/svg%3E") no-repeat center bottom;
+            background-size: cover;
+        }
+
+        .page-hero h2 {
+            font-size: 3.5rem;
+            font-weight: 700;
+            margin-bottom: 1.5rem;
+            line-height: 1.1;
+            font-family: 'Inter', sans-serif;
+            letter-spacing: -0.03em;
+            color: #ffffff;
+            text-shadow: 
+                0 2px 4px rgba(0, 0, 0, 0.3),
+                0 4px 8px rgba(0, 0, 0, 0.2),
+                0 0 20px rgba(0, 0, 0, 0.1);
+        }
+
+        .page-hero p {
+            font-size: 1.3rem;
+            color: rgba(255, 255, 255, 0.95);
+            font-weight: 400;
+            line-height: 1.7;
+            font-family: 'Inter', sans-serif;
+            letter-spacing: -0.01em;
+            text-shadow: 
+                0 1px 2px rgba(0, 0, 0, 0.2),
+                0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .coming-soon-badge {
+            background: rgba(255, 193, 7, 0.9);
+            color: #000;
+            padding: 0.7rem 2rem;
+            border-radius: 30px;
+            font-weight: 700;
+            font-size: 1.1rem;
+            display: inline-block;
+            margin-bottom: 1.5rem;
+            box-shadow: 0 6px 16px rgba(255, 193, 7, 0.4);
+            animation: pulse 2s infinite;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+        }
+
+        .preparation-notice {
+            background: rgba(255, 255, 255, 0.15);
+            backdrop-filter: blur(15px);
+            border: 1px solid rgba(255, 255, 255, 0.3);
+            border-radius: 16px;
+            padding: 1.5rem;
+            margin-top: 2rem;
+            max-width: 500px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .preparation-notice p {
+            margin: 0;
+            font-size: 1.1rem;
+            color: rgba(255, 255, 255, 0.95);
+            font-weight: 500;
+        }
+
+        @keyframes pulse {
+            0%, 100% { transform: scale(1); }
+            50% { transform: scale(1.08); }
+        }
+
+        .coming-soon-content {
+            padding: 5rem 0;
+            background: white;
+        }
+
+        .preview-card {
+            background: linear-gradient(135deg, #fef7ed 0%, #fed7aa 100%);
+            border-radius: 24px;
+            padding: 3rem;
+            text-align: center;
+            margin-bottom: 4rem;
+            border: 2px dashed #f59e0b;
+        }
+
+        .preview-icon {
+            font-size: 4rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .preview-card h3 {
+            color: #92400e;
+            margin-bottom: 2rem;
+            font-size: 2rem;
+            font-weight: 600;
+        }
+
+        .preview-features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1.5rem;
+        }
+
+        .preview-item {
+            background: white;
+            padding: 1.5rem;
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .feature-icon {
+            font-size: 1.5rem;
+        }
+
+        .preview-item span:last-child {
+            color: #64748b;
+            font-weight: 500;
+        }
+
+        .notify-section {
+            text-align: center;
+            background: #f8f9fa;
+            padding: 4rem;
+            border-radius: 20px;
+        }
+
+        .notify-section h3 {
+            color: #475569;
+            font-size: 2.5rem;
+            margin-bottom: 1.5rem;
+            font-weight: 600;
+        }
+
+        .notify-section p {
+            color: #64748b;
+            font-size: 1.2rem;
+            line-height: 1.7;
+            margin-bottom: 2.5rem;
+        }
+
+        .notify-buttons {
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        @media (max-width: 768px) {
+            .preview-features {
+                grid-template-columns: 1fr;
+            }
+
+            .notify-buttons {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .page-hero h2 {
+                font-size: 2.5rem;
+            }
+
+            .coming-soon-badge {
+                font-size: 1rem;
+                padding: 0.5rem 1.5rem;
+            }
+        }
+    </style>
+</body>
+</html>
