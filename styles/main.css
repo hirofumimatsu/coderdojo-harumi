@@ -72,6 +72,11 @@ body::before {
     display: flex;
     align-items: center;
     gap: 1rem;
+    text-decoration: none !important;
+}
+
+a.nav-brand:hover {
+    text-decoration: none !important;
 }
 
 .logo {
@@ -773,10 +778,7 @@ body::before {
 }
 
 .footer-info h4 {
-    background: linear-gradient(135deg, #00d4ff 0%, #0ea5e9 50%, #ffcc00 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
+    color: rgba(255, 255, 255, 0.6);
     margin-bottom: 1rem;
     font-size: 1.5rem;
     font-weight: 700;
