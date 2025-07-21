@@ -17,6 +17,11 @@
                 <img src="log.png" alt="CoderDojo HARUMI" class="logo">
                 <h1>CoderDojo HARUMI</h1>
             </a>
+            <button class="menu-toggle" aria-label="メニューを開く">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
             <ul class="nav-menu">
                 <li><a href="index.html">ホーム</a></li>
                 <li><a href="activities.html">活動内容</a></li>
@@ -202,7 +207,7 @@
                                 </svg>
                             </div>
                             <h4>プログラミング経験がないのですが参加できますか？</h4>
-                            <p>もちろんです！CoderDojoは初心者大歓迎です。Scratchなど視覚的なツールから始めるので、文字が読めれば小学1年生からでも楽しめます。</p>
+                            <p>もちろんです！CoderDojoは初心者大歓迎です。まったくの初心者向けには<strong>ツールの使い方説明会</strong>を定期的に実施しており、ScratchやmBot2などの基本的な操作方法から丁寧にお教えします。文字が読めれば小学1年生からでも安心して楽しめます。</p>
                         </div>
 
                         <div class="faq-card">
@@ -221,7 +226,7 @@
                                 </svg>
                             </div>
                             <h4>パソコンを持っていませんが参加できますか？</h4>
-                            <p>大丈夫です！貸出用のパソコンをご用意しています。事前にお知らせいただければ確実に準備できます。</p>
+                            <p>大丈夫です！貸出用のパソコンをご用意しています。connpassでの申し込み時に「パソコン貸出希望」を選択してください（先着順となります）。</p>
                         </div>
 
                         <div class="faq-card">
@@ -422,8 +427,8 @@
                     <a href="https://coderdojo.jp/" target="_blank" rel="noopener noreferrer" class="related-simple-link">
                         CoderDojo JAPAN
                     </a>
-                    <a href="https://dojocon2024.coderdojo.jp/" target="_blank" rel="noopener noreferrer" class="related-simple-link">
-                        DojoCon Japan
+                    <a href="https://dojocon2025.coderdojo.jp/" target="_blank" rel="noopener noreferrer" class="related-simple-link">
+                        DojoCon Japan 2025
                     </a>
                 </div>
             </div>
@@ -485,6 +490,37 @@
             
             // Start cycling after 5 seconds for comfortable pace
             setInterval(nextBlock, 5000);
+        });
+
+        // Mobile menu toggle
+        const menuToggle = document.querySelector('.menu-toggle');
+        const navMenu = document.querySelector('.nav-menu');
+
+        menuToggle.addEventListener('click', function() {
+            this.classList.toggle('active');
+            navMenu.classList.toggle('active');
+            
+            // Update aria-label for accessibility
+            const isActive = this.classList.contains('active');
+            this.setAttribute('aria-label', isActive ? 'メニューを閉じる' : 'メニューを開く');
+        });
+
+        // Close menu when clicking on a link
+        document.querySelectorAll('.nav-menu a').forEach(link => {
+            link.addEventListener('click', () => {
+                menuToggle.classList.remove('active');
+                navMenu.classList.remove('active');
+                menuToggle.setAttribute('aria-label', 'メニューを開く');
+            });
+        });
+
+        // Close menu when clicking outside
+        document.addEventListener('click', function(event) {
+            if (!event.target.closest('.nav')) {
+                menuToggle.classList.remove('active');
+                navMenu.classList.remove('active');
+                menuToggle.setAttribute('aria-label', 'メニューを開く');
+            }
         });
     </script>
 </body>
