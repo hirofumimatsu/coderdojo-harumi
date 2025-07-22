@@ -399,15 +399,15 @@ a.nav-brand:hover {
 .code-block::before {
     content: '';
     position: absolute;
-    top: 14px;
-    left: 16px;
-    width: 12px;
-    height: 12px;
-    background: #ff5f56;
+    top: 16px;
+    left: 20px;
+    width: 8px;
+    height: 8px;
+    background: rgba(100, 116, 139, 0.3);
     border-radius: 50%;
     box-shadow: 
-        20px 0 0 #ffbd2e,
-        40px 0 0 #27ca3f;
+        16px 0 0 rgba(100, 116, 139, 0.3),
+        32px 0 0 rgba(100, 116, 139, 0.3);
     z-index: 3;
 }
 
