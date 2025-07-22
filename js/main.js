@@ -115,39 +115,15 @@ class TypingEffect {
         const typingContent = codeBlock.querySelector('.typing-text');
         const cursor = codeBlock.querySelector('.cursor');
 
-        cursor.style.display = 'inline-block';
-        let currentHTML = typingContent.innerHTML;
-
-        const deleteChar = () => {
-            if (currentHTML.length > 0) {
-                // 最後の文字を削除（HTMLタグを考慮）
-                if (currentHTML.endsWith('>')) {
-                    // HTMLタグの場合は全体を削除
-                    const lastTagStart = currentHTML.lastIndexOf('<');
-                    if (lastTagStart !== -1) {
-                        currentHTML = currentHTML.substring(0, lastTagStart);
-                    } else {
-                        currentHTML = currentHTML.slice(0, -1);
-                    }
-                } else {
-                    currentHTML = currentHTML.slice(0, -1);
-                }
-                
-                typingContent.innerHTML = currentHTML;
-                setTimeout(deleteChar, this.deleteSpeed);
-            } else {
-                // 削除完了
-                cursor.style.display = 'none';
-                this.isTyping = false;
-                
-                // 少し待ってから次のコードブロックを表示
-                setTimeout(() => {
-                    this.showNextCodeBlock();
-                }, 500);
-            }
-        };
-
-        deleteChar();
+        // 一括でコンテンツを削除
+        typingContent.innerHTML = '';
+        cursor.style.display = 'none';
+        this.isTyping = false;
+        
+        // 少し待ってから次のコードブロックを表示
+        setTimeout(() => {
+            this.showNextCodeBlock();
+        }, 500);
     }
 }
 
