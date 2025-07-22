@@ -362,11 +362,12 @@ a.nav-brand:hover {
 
 .code-terminal {
     position: relative;
-    height: 300px;
+    min-height: 300px;
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
+    padding: 2rem;
 }
 
 .code-block {
@@ -380,17 +381,16 @@ a.nav-brand:hover {
     box-shadow: 
         0 8px 24px rgba(0, 0, 0, 0.06),
         0 2px 8px rgba(0, 0, 0, 0.04);
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto;
     opacity: 1;
     font-weight: 400;
     font-size: 1.25rem;
     line-height: 1.7;
-    min-width: 500px;
     text-align: left;
     transition: opacity 0.6s ease-in-out;
+    position: relative;
 }
 
 /* Message container styling */
@@ -419,6 +419,7 @@ a.nav-brand:hover {
     box-shadow: 
         20px 0 0 #ffbd2e,
         40px 0 0 #27ca3f;
+    z-index: 3;
 }
 
 .code-block::after {
@@ -515,12 +516,13 @@ a.nav-brand:hover {
 
 .code-block .cursor {
     display: inline-block;
-    background: #00d4ff;
+    background: #06b6d4;
     width: 2px;
     height: 1.2em;
     margin-left: 2px;
     animation: blink 1s infinite;
     border-radius: 1px;
+    vertical-align: text-top;
 }
 
 @keyframes typeIn {
