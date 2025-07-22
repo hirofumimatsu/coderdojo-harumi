@@ -200,11 +200,11 @@ a.nav-brand:hover {
 .hero {
     background: linear-gradient(135deg, #00d4ff 0%, #0ea5e9 50%, #0284c7 100%);
     color: white;
-    padding: 4rem 2rem;
+    padding: 2.5rem 2rem;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    min-height: 70vh;
+    min-height: 60vh;
     max-width: 1200px;
     margin: 0 auto;
     position: relative;
@@ -1238,7 +1238,7 @@ a.nav-brand:hover {
     .hero {
         flex-direction: column;
         text-align: center;
-        padding: 2.5rem 1rem;
+        padding: 2rem 1rem;
     }
     
     .hero-content h2 {
@@ -1364,7 +1364,7 @@ a.nav-brand:hover {
     .hero {
         flex-direction: column;
         text-align: center;
-        padding: 3rem 1rem;
+        padding: 2.5rem 1rem;
     }
     
     .hero-visual {
