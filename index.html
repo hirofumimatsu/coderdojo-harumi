@@ -7,54 +7,39 @@
     <link rel="icon" type="image/png" href="log.png">
     <link rel="shortcut icon" type="image/png" href="log.png">
     <link rel="apple-touch-icon" href="log.png">
-    <link rel="stylesheet" href="styles/main.css?v=20250122">
+    <link rel="stylesheet" href="styles/main.css?v=20250122j">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Noto+Sans+JP:wght@300;400;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header class="header">
-        <nav class="nav">
-            <a href="index.html" class="nav-brand">
-                <img src="log.png" alt="CoderDojo HARUMI" class="logo">
-                <h1>CoderDojo HARUMI</h1>
-            </a>
-            <button class="menu-toggle" aria-label="メニューを開く">
-                <span></span>
-                <span></span>
-                <span></span>
-            </button>
-            <ul class="nav-menu">
-                <li><a href="index.html">ホーム</a></li>
-                <li><a href="activities.html">活動内容</a></li>
-                <li><a href="join.html">参加方法</a></li>
-                <li><a href="blog.html">活動報告</a></li>
-                <li><a href="contact.html">お問い合わせ</a></li>
-            </ul>
-        </nav>
-    </header>
+    <div id="header-placeholder"></div>
 
     <main class="main">
         <section class="hero">
-            <div class="hero-content">
-                <h2>未来をつくる<br>プログラミングクラブ</h2>
-                <p>CoderDojo HARUMIは、子供たちがプログラミングを楽しみながら学べるボランティア運営のクラブです。<br>
-                論理的思考能力と自己表現能力を育み、未来の可能性を一緒に広げましょう！</p>
-                <div class="hero-buttons">
-                    <a href="https://coderdojo-harumi.connpass.com/" class="btn btn-primary" target="_blank" rel="noopener noreferrer">参加してみる</a>
-                    <a href="activities.html" class="btn btn-secondary">活動を見る</a>
-                </div>
-            </div>
-            <div class="hero-visual">
-                <div class="code-terminal">
-                    <div class="code-block active">
-                        <div class="typing-text"></div>
-                        <span class="cursor"></span>
+            <div class="container container--full-width">
+                <div class="hero-wrapper">
+                    <div class="hero-content">
+                        <h2>未来をつくる<br>プログラミングクラブ</h2>
+                        <p>CoderDojo HARUMIは、子供たちがプログラミングを楽しみながら学べるボランティア運営のクラブです。<br>
+                        論理的思考能力と自己表現能力を育み、未来の可能性を一緒に広げましょう！</p>
+                        <div class="hero-buttons">
+                            <a href="https://coderdojo-harumi.connpass.com/" class="btn btn-primary" target="_blank" rel="noopener noreferrer">参加してみる</a>
+                            <a href="activities.html" class="btn btn-secondary">活動を見る</a>
+                        </div>
+                    </div>
+                    <div class="hero-visual">
+                        <div class="code-terminal">
+                            <div class="code-block active">
+                                <div class="typing-text"></div>
+                                <span class="cursor"></span>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
 
         <section class="features">
-            <div class="container">
+            <div class="container container--full-width">
                 <h3>CoderDojo HARUMIの特徴</h3>
                 <div class="features-grid">
                     <div class="feature-card">
@@ -129,7 +114,7 @@
         </section>
 
         <section class="about">
-            <div class="container">
+            <div class="container container--full-width">
                 <h3>CoderDojo HARUMIについて</h3>
                 <div class="about-content">
                     <div class="about-text">
@@ -150,7 +135,20 @@
                         </ul>
                         
                         <div class="organizer-intro">
-                            <h4>🎯 代表者紹介</h4>
+                            <h4>
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" style="display: inline-block; margin-right: 0.5rem; vertical-align: text-top;">
+                                    <circle cx="12" cy="8" r="4" stroke="url(#organizer-gradient)" stroke-width="2"/>
+                                    <path d="M6 21v-2a4 4 0 0 1 4-4h4a4 4 0 0 1 4 4v2" stroke="url(#organizer-gradient)" stroke-width="2"/>
+                                    <circle cx="12" cy="8" r="2" fill="url(#organizer-gradient)"/>
+                                    <defs>
+                                        <linearGradient id="organizer-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                                            <stop offset="0%" style="stop-color:#f59e0b"/>
+                                            <stop offset="100%" style="stop-color:#0891b2"/>
+                                        </linearGradient>
+                                    </defs>
+                                </svg>
+                                代表者紹介
+                            </h4>
                             <div class="organizer-profile">
                                 <p><strong>MATSUMOTO Hirofumi</strong></p>
                                 <p>都内のCoderDojoを見学した際、2人の子供が協力して楽しそうにゲームを作っている姿を見て、自分たちの住む地域でも同様の体験を提供できないかと考え、CoderDojo HARUMIを立ち上げました。晴海エリアに在住しています。</p>
@@ -158,7 +156,22 @@
                         </div>
                         
                         <div class="mentor-recruitment">
-                            <h4>🤝 メンター・ボランティア募集</h4>
+                            <h4>
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" style="display: inline-block; margin-right: 0.5rem; vertical-align: text-top;">
+                                    <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2" stroke="url(#mentor-gradient)" stroke-width="2"/>
+                                    <circle cx="9" cy="7" r="4" stroke="url(#mentor-gradient)" stroke-width="2"/>
+                                    <path d="M23 21v-2a4 4 0 0 0-3-3.87" stroke="url(#mentor-gradient)" stroke-width="2"/>
+                                    <path d="M16 3.13a4 4 0 0 1 0 7.75" stroke="url(#mentor-gradient)" stroke-width="2"/>
+                                    <circle cx="9" cy="7" r="2" fill="url(#mentor-gradient)"/>
+                                    <defs>
+                                        <linearGradient id="mentor-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                                            <stop offset="0%" style="stop-color:#06b6d4"/>
+                                            <stop offset="100%" style="stop-color:#0891b2"/>
+                                        </linearGradient>
+                                    </defs>
+                                </svg>
+                                メンター・ボランティア募集
+                            </h4>
                             <p>子供たちの「なぜ？」「どうして？」に一緒に向き合ってくださる方を募集中。プログラミング経験は不要です。教えるよりも、一緒に考える仲間として参加してみませんか？</p>
                             <a href="https://coderdojo-harumi.connpass.com/" class="mentor-apply-btn" target="_blank" rel="noopener noreferrer">
                                 Connpassで申し込み・詳細確認
@@ -170,7 +183,7 @@
         </section>
 
         <section class="faq-section">
-            <div class="container">
+            <div class="container container--full-width">
                 <h3>よくある質問</h3>
                 <div class="faq-content">
                     <div class="faq-grid">
@@ -403,7 +416,7 @@
         </section>
 
         <section class="related-links-section">
-            <div class="container">
+            <div class="container container--full-width">
                 <h3>関連情報</h3>
                 <div class="related-links-simple">
                     <a href="https://coderdojo.jp/" target="_blank" rel="noopener noreferrer" class="related-simple-link">
@@ -418,19 +431,9 @@
 
     </main>
 
-    <footer class="footer">
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-info">
-                    <h4>CoderDojo HARUMI</h4>
-                </div>
-            </div>
-            <div class="footer-bottom">
-                <p>&copy; 2024 CoderDojo HARUMI. All rights reserved.</p>
-            </div>
-        </div>
-    </footer>
+    <div id="footer-placeholder"></div>
 
+    <script src="js/components.js"></script>
     <script src="js/main.js"></script>
 </body>
 </html>

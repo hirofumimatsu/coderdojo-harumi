@@ -7,36 +7,22 @@
     <link rel="icon" type="image/png" href="log.png">
     <link rel="shortcut icon" type="image/png" href="log.png">
     <link rel="apple-touch-icon" href="log.png">
-    <link rel="stylesheet" href="styles/main.css?v=20250122">
+    <link rel="stylesheet" href="styles/main.css?v=20250122i">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Noto+Sans+JP:wght@300;400;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header class="header">
-        <nav class="nav">
-            <div class="nav-brand">
-                <img src="log.png" alt="CoderDojo HARUMI" class="logo">
-                <h1>CoderDojo HARUMI</h1>
-            </div>
-            <ul class="nav-menu">
-                <li><a href="index.html">ホーム</a></li>
-                <li><a href="activities.html">活動内容</a></li>
-                <li><a href="join.html">参加方法</a></li>
-                <li><a href="blog.html">活動報告</a></li>
-                <li><a href="contact.html">お問い合わせ</a></li>
-            </ul>
-        </nav>
-    </header>
+    <div id="header-placeholder"></div>
 
     <main class="main">
         <section class="page-hero">
-            <div class="container">
+            <div class="container container--full-width">
                 <h2>活動内容</h2>
                 <p>CoderDojo HARUMIで体験できるプログラミング活動をご紹介します</p>
             </div>
         </section>
 
         <section class="activities-main">
-            <div class="container">
+            <div class="container container--full-width">
                 <div class="activities-grid">
                     <a href="scratch.html" class="activity-card">
                         <div class="activity-icon">
@@ -194,216 +180,10 @@
 
     </main>
 
-    <footer class="footer">
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-info">
-                    <h4>CoderDojo HARUMI</h4>
-                </div>
-            </div>
-            <div class="footer-bottom">
-                <p>&copy; 2024 CoderDojo HARUMI. All rights reserved.</p>
-            </div>
-        </div>
-    </footer>
-
-    <style>
-        .page-hero {
-            background: 
-                radial-gradient(circle at 25% 15%, rgba(6, 182, 212, 0.20) 0%, transparent 50%),
-                radial-gradient(circle at 75% 85%, rgba(8, 145, 178, 0.18) 0%, transparent 50%),
-                radial-gradient(circle at 60% 40%, rgba(2, 132, 199, 0.12) 0%, transparent 40%),
-                linear-gradient(135deg, rgba(6, 182, 212, 0.05) 0%, rgba(21, 94, 117, 0.08) 100%),
-                linear-gradient(135deg, #f0f9ff 0%, #e0f2fe 100%);
-            color: #334155;
-            padding: 4rem 0;
-            text-align: center;
-            position: relative;
-        }
-
-        .page-hero::after {
-            content: '';
-            position: absolute;
-            bottom: -2px;
-            left: 0;
-            right: 0;
-            height: 60px;
-            background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1200 120' preserveAspectRatio='none'%3E%3Cpath d='M0,0V46.29c47.79,22.2,103.59,32.17,158,28,70.36-5.37,136.33-33.31,206.8-37.5C438.64,32.43,512.34,53.67,583,72.05c69.27,18,138.3,24.88,209.4,13.08,36.15-6,69.85-17.84,104.45-29.34C989.49,25,1113-14.29,1200,52.47V0Z' fill='%23ffffff' opacity='1'%3E%3C/path%3E%3C/svg%3E") no-repeat center bottom;
-            background-size: cover;
-        }
-
-        .page-hero h2 {
-            font-size: 3.2rem;
-            font-weight: 700;
-            margin-bottom: 1.5rem;
-            line-height: 1.1;
-            font-family: 'Inter', sans-serif;
-            letter-spacing: -0.03em;
-            background: linear-gradient(135deg, #0369a1 0%, #0891b2 30%, #06b6d4 70%, #155e75 100%);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            background-clip: text;
-        }
-
-        .page-hero p {
-            font-size: 1.25rem;
-            color: #64748b;
-            font-weight: 400;
-            line-height: 1.7;
-            font-family: 'Inter', sans-serif;
-            letter-spacing: -0.01em;
-        }
-
-        .activities-main {
-            padding: 4rem 0;
-            background: white;
-        }
-
-        .activities-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-            gap: 2rem;
-            margin-top: 2rem;
-        }
-
-        .activity-card {
-            background: #ffffff;
-            padding: 2rem;
-            border-radius: 16px;
-            box-shadow: 
-                0 1px 3px rgba(71, 85, 105, 0.12),
-                0 1px 2px rgba(71, 85, 105, 0.24);
-            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-            border: 1px solid rgba(71, 85, 105, 0.08);
-            position: relative;
-            text-decoration: none;
-            display: block;
-            color: inherit;
-        }
-
-        .activity-card:visited {
-            color: inherit;
-        }
-
-        .activity-card::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            height: 3px;
-            background: linear-gradient(90deg, #06b6d4, #0891b2, #0284c7);
-            opacity: 0;
-            transition: opacity 0.4s ease;
-        }
-
-        .activity-card:hover::before {
-            opacity: 1;
-        }
-
-        .activity-card:hover {
-            box-shadow: 
-                0 4px 6px -1px rgba(71, 85, 105, 0.1),
-                0 2px 4px -1px rgba(71, 85, 105, 0.06),
-                0 10px 15px -3px rgba(71, 85, 105, 0.1);
-            border-color: rgba(14, 165, 233, 0.2);
-            transform: translateY(-2px);
-        }
-
-        .activity-icon {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            width: 64px;
-            height: 64px;
-            margin: 0 0 1.5rem 0;
-            background: rgba(14, 165, 233, 0.08);
-            border-radius: 16px;
-            border: 1px solid rgba(14, 165, 233, 0.12);
-            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-            position: relative;
-        }
-
-        .activity-icon::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            background: linear-gradient(135deg, rgba(0, 212, 255, 0.1) 0%, rgba(255, 204, 0, 0.1) 100%);
-            opacity: 0;
-            transition: opacity 0.3s ease;
-        }
-
-        .activity-card:hover .activity-icon {
-            background: rgba(0, 212, 255, 0.1);
-            border-color: rgba(0, 212, 255, 0.3);
-        }
-
-        .activity-card:hover .activity-icon::before {
-            opacity: 1;
-        }
-
-        .activity-icon svg {
-            z-index: 1;
-            filter: drop-shadow(0 2px 4px rgba(0, 212, 255, 0.2));
-            transition: filter 0.3s ease;
-            margin-left: 20px;
-        }
-
-        .activity-card:hover .activity-icon svg {
-            filter: drop-shadow(0 2px 4px rgba(0, 212, 255, 0.3));
-        }
-
-        .activity-card h3 {
-            font-size: 1.75rem;
-            margin-bottom: 1rem;
-            color: #1e293b;
-            font-weight: 700;
-            font-family: 'Inter', sans-serif;
-            letter-spacing: -0.02em;
-        }
-
-        .activity-level {
-            background: rgba(100, 116, 139, 0.1);
-            color: #64748b;
-            padding: 0.3rem 0.8rem;
-            border-radius: 6px;
-            font-size: 0.8rem;
-            font-weight: 500;
-            display: inline-block;
-            margin-bottom: 1rem;
-            font-family: 'Inter', sans-serif;
-            letter-spacing: -0.01em;
-            border: 1px solid rgba(100, 116, 139, 0.15);
-        }
-
-        .activity-card p {
-            color: #64748b;
-            line-height: 1.7;
-            font-weight: 400;
-            font-family: 'Inter', sans-serif;
-            margin-bottom: 1.5rem;
-        }
-
-        .activity-features {
-            list-style: none;
-        }
-
-        .activity-features li {
-            padding: 0.3rem 0;
-            color: #555;
-            font-size: 0.9rem;
-        }
+    <div id="footer-placeholder"></div>
 
 
-
-        @media (max-width: 768px) {
-            .activities-grid {
-                grid-template-columns: 1fr;
-            }
-        }
-    </style>
+    <script src="js/components.js"></script>
+    <script src="js/main.js"></script>
 </body>
 </html>

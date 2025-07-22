@@ -7,36 +7,22 @@
     <link rel="icon" type="image/png" href="log.png">
     <link rel="shortcut icon" type="image/png" href="log.png">
     <link rel="apple-touch-icon" href="log.png">
-    <link rel="stylesheet" href="styles/main.css?v=20250122">
+    <link rel="stylesheet" href="styles/main.css?v=20250122i">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Noto+Sans+JP:wght@300;400;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header class="header">
-        <nav class="nav">
-            <div class="nav-brand">
-                <img src="log.png" alt="CoderDojo HARUMI" class="logo">
-                <h1>CoderDojo HARUMI</h1>
-            </div>
-            <ul class="nav-menu">
-                <li><a href="index.html">ホーム</a></li>
-                <li><a href="activities.html">活動内容</a></li>
-                <li><a href="join.html">参加方法</a></li>
-                <li><a href="blog.html">活動報告</a></li>
-                <li><a href="contact.html">お問い合わせ</a></li>
-            </ul>
-        </nav>
-    </header>
+    <div id="header-placeholder"></div>
 
     <main class="main">
         <section class="page-hero">
-            <div class="container">
+            <div class="container container--full-width">
                 <h2>参加方法</h2>
                 <p>CoderDojo HARUMIへの参加は簡単！まずは気軽に見学からどうぞ</p>
             </div>
         </section>
 
         <section class="simple-join">
-            <div class="container">
+            <div class="container container--full-width">
                 <div class="join-content">
                     <h3>参加方法</h3>
                     <p>参加までの流れは簡単です。Connpassで申し込むだけ。見学だけでも構いません。</p>
@@ -50,156 +36,10 @@
 
     </main>
 
-    <footer class="footer">
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-info">
-                    <h4>CoderDojo HARUMI</h4>
-                </div>
-            </div>
-            <div class="footer-bottom">
-                <p>&copy; 2024 CoderDojo HARUMI. All rights reserved.</p>
-            </div>
-        </div>
-    </footer>
+    <div id="footer-placeholder"></div>
 
-    <style>
-        .page-hero {
-            background: 
-                radial-gradient(circle at 25% 15%, rgba(6, 182, 212, 0.20) 0%, transparent 50%),
-                radial-gradient(circle at 75% 85%, rgba(8, 145, 178, 0.18) 0%, transparent 50%),
-                radial-gradient(circle at 60% 40%, rgba(2, 132, 199, 0.12) 0%, transparent 40%),
-                linear-gradient(135deg, rgba(6, 182, 212, 0.05) 0%, rgba(21, 94, 117, 0.08) 100%),
-                linear-gradient(135deg, #f0f9ff 0%, #e0f2fe 100%);
-            color: #334155;
-            padding: 4rem 0;
-            text-align: center;
-            position: relative;
-        }
 
-        .page-hero::after {
-            content: '';
-            position: absolute;
-            bottom: -2px;
-            left: 0;
-            right: 0;
-            height: 60px;
-            background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1200 120' preserveAspectRatio='none'%3E%3Cpath d='M0,0V46.29c47.79,22.2,103.59,32.17,158,28,70.36-5.37,136.33-33.31,206.8-37.5C438.64,32.43,512.34,53.67,583,72.05c69.27,18,138.3,24.88,209.4,13.08,36.15-6,69.85-17.84,104.45-29.34C989.49,25,1113-14.29,1200,52.47V0Z' fill='%23ffffff' opacity='1'%3E%3C/path%3E%3C/svg%3E") no-repeat center bottom;
-            background-size: cover;
-        }
-
-        .page-hero h2 {
-            font-size: 3.2rem;
-            font-weight: 700;
-            margin-bottom: 1.5rem;
-            line-height: 1.1;
-            font-family: 'Inter', sans-serif;
-            letter-spacing: -0.03em;
-            background: linear-gradient(135deg, #0369a1 0%, #0891b2 30%, #06b6d4 70%, #155e75 100%);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            background-clip: text;
-        }
-
-        .page-hero p {
-            font-size: 1.25rem;
-            color: #64748b;
-            font-weight: 400;
-            line-height: 1.7;
-            font-family: 'Inter', sans-serif;
-            letter-spacing: -0.01em;
-        }
-
-        .simple-join {
-            background: white;
-            padding: 4rem 0;
-        }
-
-        .join-content {
-            text-align: center;
-            max-width: 600px;
-            margin: 0 auto;
-        }
-
-        .join-content h3 {
-            font-size: 2rem;
-            margin-bottom: 1.5rem;
-            color: #64748b;
-            font-weight: 600;
-            font-family: 'Inter', sans-serif;
-        }
-
-        .join-content p {
-            font-size: 1.1rem;
-            line-height: 1.6;
-            margin-bottom: 2rem;
-            color: #64748b;
-            font-family: 'Inter', sans-serif;
-        }
-
-        .join-btn {
-            display: inline-block;
-            padding: 1.2rem 2.5rem;
-            background: #0891b2;
-            color: white;
-            text-decoration: none;
-            border-radius: 8px;
-            font-weight: 600;
-            font-family: 'Inter', sans-serif;
-            font-size: 1.1rem;
-            transition: all 0.3s ease;
-        }
-
-        .join-btn:hover {
-            background: #0284c7;
-            transform: translateY(-2px);
-        }
-
-        .info-section {
-            background: #f8f9fa;
-            padding: 3rem 0;
-        }
-
-        .info-content {
-            text-align: center;
-            max-width: 600px;
-            margin: 0 auto;
-        }
-
-        .info-content h3 {
-            font-size: 1.8rem;
-            margin-bottom: 1.5rem;
-            color: #64748b;
-            font-weight: 600;
-            font-family: 'Inter', sans-serif;
-        }
-
-        .info-content p {
-            font-size: 1rem;
-            line-height: 1.6;
-            margin-bottom: 2rem;
-            color: #64748b;
-            font-family: 'Inter', sans-serif;
-        }
-
-        .info-btn {
-            display: inline-block;
-            padding: 1rem 2rem;
-            background: #64748b;
-            color: white;
-            text-decoration: none;
-            border-radius: 8px;
-            font-weight: 500;
-            font-family: 'Inter', sans-serif;
-            font-size: 1rem;
-            transition: all 0.3s ease;
-        }
-
-        .info-btn:hover {
-            background: #475569;
-            transform: translateY(-2px);
-        }
-
-    </style>
+    <script src="js/components.js"></script>
+    <script src="js/main.js"></script>
 </body>
 </html>
