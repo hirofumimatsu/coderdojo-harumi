@@ -3,13 +3,13 @@ class TypingEffect {
     constructor() {
         this.codeBlocks = [
             {
-                code: `<span class="code-keyword">function</span> <span class="code-function">createProject</span>() {\n    <span class="code-keyword">const</span> <span class="code-variable">idea</span> = <span class="code-string">"素晴らしいアイデア"</span>;\n    <span class="code-keyword">return</span> <span class="code-variable">idea</span>.<span class="code-method">makeMagic</span>();\n}`
+                code: `<span class="code-keyword">function</span> <span class="code-function">createProject</span>() {<br>&nbsp;&nbsp;&nbsp;&nbsp;<span class="code-keyword">const</span> <span class="code-variable">idea</span> = <span class="code-string">"素晴らしいアイデア"</span>;<br>&nbsp;&nbsp;&nbsp;&nbsp;<span class="code-keyword">return</span> <span class="code-variable">idea</span>.<span class="code-method">makeMagic</span>();<br>}`
             },
             {
-                code: `<span class="code-keyword">def</span> <span class="code-function">learn_programming</span>():\n    <span class="code-variable">skills</span> = [<span class="code-string">"Python"</span>, <span class="code-string">"Scratch"</span>, <span class="code-string">"Web"</span>]\n    <span class="code-keyword">for</span> <span class="code-variable">skill</span> <span class="code-keyword">in</span> <span class="code-variable">skills</span>:\n        <span class="code-function">practice</span>(<span class="code-variable">skill</span>)`
+                code: `<span class="code-keyword">def</span> <span class="code-function">learn_programming</span>():<br>&nbsp;&nbsp;&nbsp;&nbsp;<span class="code-variable">skills</span> = [<span class="code-string">"Python"</span>, <span class="code-string">"Scratch"</span>, <span class="code-string">"Web"</span>]<br>&nbsp;&nbsp;&nbsp;&nbsp;<span class="code-keyword">for</span> <span class="code-variable">skill</span> <span class="code-keyword">in</span> <span class="code-variable">skills</span>:<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="code-function">practice</span>(<span class="code-variable">skill</span>)`
             },
             {
-                code: `<span class="code-comment">// CoderDojo HARUMIへようこそ</span>\n<span class="code-keyword">let</span> <span class="code-variable">friendship</span> = <span class="code-string">"仲間と一緒に"</span>;\n<span class="code-keyword">let</span> <span class="code-variable">creativity</span> = <span class="code-string">"創造力を育む"</span>;\n\n<span class="code-function">buildFuture</span>(<span class="code-variable">friendship</span>, <span class="code-variable">creativity</span>);`
+                code: `<span class="code-comment">// CoderDojo HARUMIへようこそ</span><br><span class="code-keyword">let</span> <span class="code-variable">friendship</span> = <span class="code-string">"仲間と一緒に"</span>;<br><span class="code-keyword">let</span> <span class="code-variable">creativity</span> = <span class="code-string">"創造力を育む"</span>;<br><br><span class="code-function">buildFuture</span>(<span class="code-variable">friendship</span>, <span class="code-variable">creativity</span>);`
             }
         ];
         this.currentBlockIndex = 0;
