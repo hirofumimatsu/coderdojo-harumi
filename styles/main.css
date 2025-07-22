@@ -393,6 +393,7 @@ a.nav-brand:hover {
     position: relative;
     white-space: pre-wrap;
     word-wrap: break-word;
+    tab-size: 4;
 }
 
 /* Message container styling */
