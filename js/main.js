@@ -3,16 +3,13 @@ class TypingEffect {
     constructor() {
         this.codeBlocks = [
             {
-                code: `<span class="code-keyword">function</span> <span class="code-function">createProject</span>() {\n    <span class="code-keyword">const</span> <span class="code-variable">idea</span> = <span class="code-string">"素晴らしいアイデア"</span>;\n    <span class="code-keyword">return</span> <span class="code-variable">idea</span>.<span class="code-method">makeMagic</span>();\n}`,
-                message: "創造力でアイデアを実現しよう！"
+                code: `<span class="code-keyword">function</span> <span class="code-function">createProject</span>() {\n    <span class="code-keyword">const</span> <span class="code-variable">idea</span> = <span class="code-string">"素晴らしいアイデア"</span>;\n    <span class="code-keyword">return</span> <span class="code-variable">idea</span>.<span class="code-method">makeMagic</span>();\n}`
             },
             {
-                code: `<span class="code-keyword">def</span> <span class="code-function">learn_programming</span>():\n    <span class="code-variable">skills</span> = [<span class="code-string">"Python"</span>, <span class="code-string">"Scratch"</span>, <span class="code-string">"Web"</span>]\n    <span class="code-keyword">for</span> <span class="code-variable">skill</span> <span class="code-keyword">in</span> <span class="code-variable">skills</span>:\n        <span class="code-function">practice</span>(<span class="code-variable">skill</span>)`,
-                message: "プログラミングを楽しく学ぼう！"
+                code: `<span class="code-keyword">def</span> <span class="code-function">learn_programming</span>():\n    <span class="code-variable">skills</span> = [<span class="code-string">"Python"</span>, <span class="code-string">"Scratch"</span>, <span class="code-string">"Web"</span>]\n    <span class="code-keyword">for</span> <span class="code-variable">skill</span> <span class="code-keyword">in</span> <span class="code-variable">skills</span>:\n        <span class="code-function">practice</span>(<span class="code-variable">skill</span>)`
             },
             {
-                code: `<span class="code-comment">// CoderDojo HARUMIへようこそ</span>\n<span class="code-keyword">let</span> <span class="code-variable">friendship</span> = <span class="code-string">"仲間と一緒に"</span>;\n<span class="code-keyword">let</span> <span class="code-variable">creativity</span> = <span class="code-string">"創造力を育む"</span>;\n\n<span class="code-function">buildFuture</span>(<span class="code-variable">friendship</span>, <span class="code-variable">creativity</span>);`,
-                message: "みんなで未来を作ろう！"
+                code: `<span class="code-comment">// CoderDojo HARUMIへようこそ</span>\n<span class="code-keyword">let</span> <span class="code-variable">friendship</span> = <span class="code-string">"仲間と一緒に"</span>;\n<span class="code-keyword">let</span> <span class="code-variable">creativity</span> = <span class="code-string">"創造力を育む"</span>;\n\n<span class="code-function">buildFuture</span>(<span class="code-variable">friendship</span>, <span class="code-variable">creativity</span>);`
             }
         ];
         this.currentBlockIndex = 0;
@@ -44,13 +41,13 @@ class TypingEffect {
         if (this.isTyping) return;
 
         const currentBlock = this.codeBlocks[this.currentBlockIndex];
-        this.typeCode(currentBlock.code, currentBlock.message);
+        this.typeCode(currentBlock.code);
         
         // 次のブロックのインデックスを準備
         this.currentBlockIndex = (this.currentBlockIndex + 1) % this.codeBlocks.length;
     }
 
-    typeCode(codeHTML, message) {
+    typeCode(codeHTML) {
         this.isTyping = true;
         
         const codeBlock = document.querySelector('.code-block.active');
@@ -58,23 +55,11 @@ class TypingEffect {
 
         const typingContent = codeBlock.querySelector('.typing-text');
         const cursor = codeBlock.querySelector('.cursor');
-        const messageElement = document.querySelector('.code-message');
-        const messageText = messageElement?.querySelector('.message-text');
-
-        // メッセージをリセット
-        if (messageElement) {
-            messageElement.classList.remove('active');
-        }
 
         // 現在の内容をクリア
         typingContent.innerHTML = '';
         cursor.style.display = 'inline-block';
 
-        // HTMLタグを除いた純粋なテキスト用の配列を作成
-        const tempDiv = document.createElement('div');
-        tempDiv.innerHTML = codeHTML;
-        const plainText = tempDiv.textContent || tempDiv.innerText || '';
-        
         // HTMLの構造を維持しながらタイピング効果を実現
         let currentHTML = '';
         let charIndex = 0;
@@ -112,9 +97,9 @@ class TypingEffect {
                 // タイピング完了
                 cursor.style.display = 'none';
                 
-                // しばらく表示してからメッセージを表示
+                // しばらく表示してから削除開始
                 setTimeout(() => {
-                    this.showMessage(message);
+                    this.deleteCurrentCode();
                 }, this.displayTime);
             }
         };
@@ -122,25 +107,6 @@ class TypingEffect {
         typeChar();
     }
 
-    showMessage(message) {
-        const messageElement = document.querySelector('.code-message');
-        const messageText = messageElement?.querySelector('.message-text');
-        
-        if (messageText && messageElement) {
-            messageText.textContent = message;
-            messageElement.classList.add('active');
-            
-            // メッセージを表示してから次のコードへ
-            setTimeout(() => {
-                this.deleteCurrentCode();
-            }, this.messageDisplayTime);
-        } else {
-            // メッセージ要素がない場合は直接次へ
-            setTimeout(() => {
-                this.deleteCurrentCode();
-            }, this.displayTime);
-        }
-    }
 
     deleteCurrentCode() {
         const codeBlock = document.querySelector('.code-block.active');
@@ -148,12 +114,6 @@ class TypingEffect {
 
         const typingContent = codeBlock.querySelector('.typing-text');
         const cursor = codeBlock.querySelector('.cursor');
-        const messageElement = document.querySelector('.code-message');
-
-        // メッセージを非表示
-        if (messageElement) {
-            messageElement.classList.remove('active');
-        }
 
         cursor.style.display = 'inline-block';
         let currentHTML = typingContent.innerHTML;
