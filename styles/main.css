@@ -212,8 +212,8 @@ a.nav-brand:hover {
         linear-gradient(135deg, rgba(6, 182, 212, 0.05) 0%, rgba(21, 94, 117, 0.08) 100%),
         linear-gradient(135deg, #f0f9ff 0%, #e0f2fe 100%);
     color: #334155;
-    padding: 3rem 0;
-    min-height: 50vh;
+    padding: 2rem 0;
+    min-height: 35vh;
     position: relative;
     border-radius: 0 0 24px 24px;
     box-shadow: 
@@ -248,7 +248,7 @@ a.nav-brand:hover {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    min-height: 50vh;
+    min-height: 35vh;
 }
 
 .hero-content {
@@ -273,7 +273,7 @@ a.nav-brand:hover {
 
 .hero-content p {
     font-size: 1.25rem;
-    margin-bottom: 2.5rem;
+    margin-bottom: 2rem;
     color: #64748b;
     font-weight: 400;
     line-height: 1.7;
@@ -358,7 +358,7 @@ a.nav-brand:hover {
     box-shadow: 
         0 4px 16px rgba(71, 85, 105, 0.2),
         0 8px 32px rgba(6, 182, 212, 0.15);
-    color: #1e293b;
+    color: #0891b2;
 }
 
 /* Hero Visual */
@@ -390,7 +390,7 @@ a.nav-brand:hover {
     border-radius: 12px;
     padding: 3.5rem 2.5rem 2.5rem 2.5rem;
     font-family: 'SF Mono', 'Monaco', 'Cascadia Code', monospace;
-    color: #1e293b;
+    color: #0891b2;
     box-shadow: 
         0 8px 24px rgba(0, 0, 0, 0.08),
         0 2px 8px rgba(0, 0, 0, 0.06);
@@ -575,14 +575,14 @@ a.nav-brand:hover {
         linear-gradient(135deg, rgba(6, 182, 212, 0.05) 0%, rgba(21, 94, 117, 0.08) 100%),
         linear-gradient(135deg, #f0f9ff 0%, #e0f2fe 100%);
     color: #334155;
-    padding: 3rem 0 4rem;
+    padding: 2rem 0 2.5rem;
     text-align: center;
     position: relative;
     border-radius: 0 0 24px 24px;
     box-shadow: 
         0 1px 3px rgba(71, 85, 105, 0.12),
         0 4px 12px rgba(71, 85, 105, 0.08);
-    margin-bottom: 4rem;
+    margin-bottom: 0;
 }
 
 .page-hero::after {
@@ -597,12 +597,12 @@ a.nav-brand:hover {
 }
 
 .page-hero h2 {
-    font-size: 3.2rem;
-    font-weight: 700;
-    margin-bottom: 1.5rem;
-    line-height: 1.15;
+    font-size: 2.4rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    line-height: 1.2;
     font-family: 'Inter', sans-serif;
-    letter-spacing: -0.025em;
+    letter-spacing: -0.02em;
     background: linear-gradient(135deg, #0369a1 0%, #0891b2 30%, #06b6d4 70%, #155e75 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -625,7 +625,7 @@ a.nav-brand:hover {
 .blog-main,
 .blog-subscribe {
     background: white;
-    padding: 4rem 0;
+    padding: 2.5rem 0 4rem;
 }
 
 .activities-main h3,
@@ -758,7 +758,7 @@ a.nav-brand:hover {
 .activity-card h3 {
     font-size: 1.75rem;
     margin-bottom: 1rem;
-    color: #1e293b;
+    color: #0891b2;
     font-weight: 700;
     font-family: 'Inter', sans-serif;
     letter-spacing: -0.02em;
@@ -843,7 +843,7 @@ a.nav-brand:hover {
 .step-card h4 {
     font-size: 1.5rem;
     margin-bottom: 1rem;
-    color: #1e293b;
+    color: #0891b2;
     font-weight: 700;
     font-family: 'Inter', sans-serif;
 }
@@ -898,7 +898,7 @@ a.nav-brand:hover {
 .contact-card h4 {
     font-size: 1.3rem;
     margin-bottom: 1rem;
-    color: #1e293b;
+    color: #0891b2;
     font-weight: 600;
     font-family: 'Inter', sans-serif;
 }
@@ -956,7 +956,7 @@ a.nav-brand:hover {
 .blog-card h3 {
     font-size: 1.3rem;
     margin-bottom: 0.5rem;
-    color: #1e293b;
+    color: #0891b2;
     font-weight: 700;
     font-family: 'Inter', sans-serif;
 }
@@ -989,7 +989,7 @@ a.nav-brand:hover {
 .blog-subscribe-form h4 {
     text-align: center;
     margin-bottom: 1rem;
-    color: #1e293b;
+    color: #0891b2;
     font-weight: 600;
     font-family: 'Inter', sans-serif;
 }
@@ -1041,12 +1041,12 @@ a.nav-brand:hover {
 
 .features h3 {
     text-align: center;
-    font-size: 2.75rem;
+    font-size: 2.2rem;
     margin-bottom: 3rem;
-    color: #475569;
-    font-weight: 600;
+    color: #64748b;
+    font-weight: 500;
     font-family: 'Inter', sans-serif;
-    letter-spacing: -0.03em;
+    letter-spacing: -0.02em;
     position: relative;
 }
 
@@ -1154,12 +1154,12 @@ a.nav-brand:hover {
 }"
 
 .feature-card h4 {
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     margin-bottom: 1rem;
-    color: #1e293b;
-    font-weight: 700;
+    color: #0891b2;
+    font-weight: 600;
     font-family: 'Inter', sans-serif;
-    letter-spacing: -0.02em;
+    letter-spacing: -0.01em;
 }
 
 .feature-card p {
@@ -1200,16 +1200,25 @@ a.nav-brand:hover {
 
 .about h3 {
     text-align: center;
-    font-size: 3.2rem;
-    font-weight: 700;
+    font-size: 2.2rem;
+    font-weight: 500;
     margin-bottom: 3rem;
-    line-height: 1.1;
+    line-height: 1.2;
     font-family: 'Inter', sans-serif;
-    letter-spacing: -0.03em;
-    background: linear-gradient(135deg, #0369a1 0%, #0891b2 30%, #06b6d4 70%, #155e75 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
+    letter-spacing: -0.02em;
+    color: #64748b;
+    position: relative;
+}
+.about h3::after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60px;
+    height: 3px;
+    background: linear-gradient(90deg, #06b6d4, #0891b2, #0284c7);
+    border-radius: 2px;
 }
 
 .about-content {
@@ -1348,7 +1357,7 @@ a.nav-brand:hover {
 }
 
 .organizer-intro h4 {
-    color: #1e293b;
+    color: #0891b2;
     margin-bottom: 1rem;
     font-size: 1.2rem;
     font-weight: 600;
@@ -1365,7 +1374,7 @@ a.nav-brand:hover {
 
 .organizer-profile p:first-child {
     font-weight: 600;
-    color: #1e293b;
+    color: #0891b2;
     margin-bottom: 0.8rem;
 }
 
@@ -1379,7 +1388,7 @@ a.nav-brand:hover {
 }
 
 .mentor-recruitment h4 {
-    color: #1e293b;
+    color: #0891b2;
     margin-bottom: 1rem;
     font-size: 1.2rem;
     font-weight: 600;
@@ -1424,12 +1433,12 @@ a.nav-brand:hover {
 
 .faq-section h3 {
     text-align: center;
-    font-size: 2.75rem;
+    font-size: 2.2rem;
     margin-bottom: 3rem;
-    color: #475569;
-    font-weight: 600;
+    color: #64748b;
+    font-weight: 500;
     font-family: 'Inter', sans-serif;
-    letter-spacing: -0.03em;
+    letter-spacing: -0.02em;
     position: relative;
 }
 
@@ -1539,12 +1548,12 @@ a.nav-brand:hover {
 }
 
 .faq-card h4 {
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     margin-bottom: 1rem;
-    color: #1e293b;
-    font-weight: 700;
+    color: #0891b2;
+    font-weight: 600;
     font-family: 'Inter', sans-serif;
-    letter-spacing: -0.02em;
+    letter-spacing: -0.01em;
 }
 
 .faq-card p {
@@ -1556,18 +1565,34 @@ a.nav-brand:hover {
 
 /* Related Links Section */
 .related-links-section {
-    background: #f8f9fa;
-    padding: 3rem 0;
+    background: 
+        radial-gradient(circle at 25% 15%, rgba(6, 182, 212, 0.08) 0%, transparent 50%),
+        radial-gradient(circle at 75% 85%, rgba(8, 145, 178, 0.06) 0%, transparent 50%),
+        linear-gradient(135deg, #f0f9ff 0%, #fafbff 100%);
+    padding: 4rem 0;
+    position: relative;
 }
 
 .related-links-section h3 {
     text-align: center;
-    font-size: 2rem;
-    margin-bottom: 2rem;
-    color: #475569;
-    font-weight: 600;
+    font-size: 2.2rem;
+    margin-bottom: 3rem;
+    color: #64748b;
+    font-weight: 500;
     font-family: 'Inter', sans-serif;
     letter-spacing: -0.02em;
+    position: relative;
+}
+.related-links-section h3::after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60px;
+    height: 3px;
+    background: linear-gradient(90deg, #06b6d4, #0891b2, #0284c7);
+    border-radius: 2px;
 }
 
 .related-links-simple {
@@ -1578,24 +1603,48 @@ a.nav-brand:hover {
 }
 
 .related-simple-link {
-    display: inline-block;
-    padding: 1rem 2rem;
-    background: white;
-    color: #64748b;
+    display: inline-flex;
+    align-items: center;
+    padding: 1rem 2rem 1rem 1.5rem;
+    background: linear-gradient(135deg, #06b6d4 0%, #0891b2 100%);
+    color: white;
     text-decoration: none;
     border-radius: 8px;
-    font-weight: 500;
+    font-weight: 600;
     font-family: 'Inter', sans-serif;
     font-size: 1rem;
-    border: 1px solid rgba(6, 182, 212, 0.1);
+    border: none;
     transition: all 0.3s ease;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+    box-shadow: 
+        0 4px 12px rgba(6, 182, 212, 0.3),
+        0 2px 4px rgba(0, 0, 0, 0.1);
+    position: relative;
+    text-transform: none;
 }
 
+.related-simple-link::after {
+    content: '↗';
+    margin-left: 0.5rem;
+    font-size: 1.1rem;
+    opacity: 0.8;
+    transition: all 0.3s ease;
+}
 .related-simple-link:hover {
-    color: #06b6d4;
-    border-color: rgba(6, 182, 212, 0.3);
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background: linear-gradient(135deg, #0891b2 0%, #0369a1 100%);
+    box-shadow: 
+        0 6px 20px rgba(6, 182, 212, 0.4),
+        0 4px 12px rgba(0, 0, 0, 0.15);
+    transform: translateY(-2px);
+}
+.related-simple-link:hover::after {
+    opacity: 1;
+    transform: translateX(2px) translateY(-1px);
+}
+.related-simple-link:active {
+    transform: translateY(0px);
+    box-shadow: 
+        0 2px 8px rgba(6, 182, 212, 0.3),
+        0 1px 4px rgba(0, 0, 0, 0.1);
 }
 
 /* Footer Related Links (Legacy - can be removed) */
@@ -1750,7 +1799,7 @@ a.nav-brand:hover {
     
     .features h3,
     .about h3 {
-        font-size: 2rem;
+        font-size: 1.8rem;
     }
     
     .feature-card {
@@ -1768,7 +1817,7 @@ a.nav-brand:hover {
     }
     
     .page-hero h2 {
-        font-size: 2.2rem;
+        font-size: 1.9rem;
     }
     
     .activity-card {
@@ -1907,7 +1956,7 @@ a.nav-brand:hover {
     
     .features h3,
     .about h3 {
-        font-size: 2.2rem;
+        font-size: 2rem;
     }
     
     .features-grid {
@@ -1958,11 +2007,11 @@ a.nav-brand:hover {
     
     /* Activity pages mobile improvements */
     .page-hero {
-        padding: 3rem 0;
+        padding: 1.5rem 0 2rem;
     }
     
     .page-hero h2 {
-        font-size: 2.2rem;
+        font-size: 1.9rem;
     }
     
     .activity-detail {

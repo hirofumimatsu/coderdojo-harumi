@@ -114,7 +114,7 @@ linear-gradient(135deg, #f0f9ff 0%, #e0f2fe 100%)
 - **統一クラス**: 全ページで `container--full-width` 使用
 
 ### パフォーマンス
-- CSS versioning: `?v=20250122j`
+- CSS versioning: `?v=20250122q`
 - 画像最適化推奨
 - キャッシュ設定: netlify.toml参照
 
