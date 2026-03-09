@@ -128,4 +128,4 @@ Ghost管理画面でブログ記事に以下のタグを設定すると、適切
 - [ ] 画像最適化
 - [ ] アクセス解析の追加
 
-CoderDojo HARUMIで素晴らしいプログラミング体験を！🚀
+CoderDojo HARUMIで素晴らしいプログラミング体験を！🚀# test-claude
